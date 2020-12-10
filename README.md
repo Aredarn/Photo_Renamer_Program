@@ -1,6 +1,6 @@
 # Renaming_Prog
-A program egy adott mappából átmásol fájlokat egy másik megadott mappába, majd átnevezi azokat a dátomra amikor létre lettek hozva vagy amikor utoljára lettek módosítva.
 
-Új funkciók a v2.0-ban érkeznek majd: 
-Egyenkénti másolás, kattintással, 
-Fájlok átnevezése a létrehozás dátumára, 
+The program copies photos from a user-specified folder to another folder again specified by user, than renames to to the date they were taken or when they got modified last ime.
+
+New functions are going to be come in v2.0:
+Copy one by one with click
