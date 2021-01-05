@@ -12,9 +12,9 @@ E:\Programos\Finished\Renaming_Prog\bin\Debug\Renaming_Prog.exe.config
 E:\Programos\Finished\Renaming_Prog\bin\Debug\Renaming_Prog.exe
 E:\Programos\Finished\Renaming_Prog\bin\Debug\Renaming_Prog.pdb
 E:\Programos\Finished\Renaming_Prog\obj\Debug\Renaming_Prog.csprojAssemblyReference.cache
-E:\Programos\Finished\Renaming_Prog\obj\Debug\Renaming_Prog.Form1.resources
 E:\Programos\Finished\Renaming_Prog\obj\Debug\Renaming_Prog.Properties.Resources.resources
 E:\Programos\Finished\Renaming_Prog\obj\Debug\Renaming_Prog.csproj.GenerateResource.cache
 E:\Programos\Finished\Renaming_Prog\obj\Debug\Renaming_Prog.csproj.CoreCompileInputs.cache
 E:\Programos\Finished\Renaming_Prog\obj\Debug\Renaming_Prog.exe
 E:\Programos\Finished\Renaming_Prog\obj\Debug\Renaming_Prog.pdb
+E:\Programos\Finished\Renaming_Prog\obj\Debug\Renaming_Prog.Renamer_Form.resources

@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace Renaming_Prog
 {
-    public partial class Form1 : Form
+    public partial class Renamer_Form : Form
     {
-        public Form1()
+        public Renamer_Form()
         {
             InitializeComponent();
  
@@ -50,7 +50,7 @@ namespace Renaming_Prog
             }
 
             DirectoryInfo d = new DirectoryInfo(eleresi_ut_2.Text);           
-            FileInfo[] Files = d.GetFiles("*"); //Ez a sor észleli a fájlokat
+            FileInfo[] Files = d.GetFiles("*"); //This line detects the files
         }
 
 
@@ -68,18 +68,23 @@ namespace Renaming_Prog
             foreach (var srcPath in Directory.GetFiles(sourcePath))
             {
 
+                string CreatedON = "" + File.GetCreationTime(srcPath);
+             
+                //replaces the ( ':' and the '.' in the files name
+                CreatedON = CreatedON.Replace("." , "_");
+                CreatedON = CreatedON.Replace(":", "_");
+
+                //Gets the file's format (like png or jpeg
+                string ext = Path.GetExtension(srcPath);
+
+                //Adds the targetpath, the date of creation and the file's format
+                string pathMove = targetPath + @"\"+(CreatedON) + ext;
+                
                 //Copy the file from sourcepath and place into mentioned target path, 
-                //Overwrite the file if same file is exist in target path
-                File.Copy(srcPath, srcPath.Replace(sourcePath, targetPath), true);
-            }
-
-
-            //Egy fájlt át tud nevezni:
-
-            FileInfo fInfo = new FileInfo(eleresi_ut_2.Text + "\\ProfPic.jpg");
-            fInfo.MoveTo(eleresi_ut_2.Text + "\\Motoros.jpg");
-
+                //Overwrite the file if same file is exist in target path               
+                File.Copy(srcPath, pathMove, true);
             
+            }            
 
         }
 

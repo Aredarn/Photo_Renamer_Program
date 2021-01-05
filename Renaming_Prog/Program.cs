@@ -16,7 +16,7 @@ namespace Renaming_Prog
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Renamer_Form());
         }
     }
 }

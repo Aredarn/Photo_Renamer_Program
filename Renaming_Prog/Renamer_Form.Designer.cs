@@ -1,6 +1,6 @@
 ﻿namespace Renaming_Prog
 {
-    partial class Form1
+    partial class Renamer_Form
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Renamer_Form));
             this.Select_Photos = new System.Windows.Forms.Button();
             this.listBoxphotosBefore = new System.Windows.Forms.ListBox();
             this.Copy_Files = new System.Windows.Forms.Button();
@@ -36,7 +36,6 @@
             this.eleresi_ut = new System.Windows.Forms.TextBox();
             this.select_folder = new System.Windows.Forms.Button();
             this.eleresi_ut_2 = new System.Windows.Forms.TextBox();
-            this.delete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Select_Photos
@@ -61,11 +60,11 @@
             // 
             // Copy_Files
             // 
-            this.Copy_Files.Location = new System.Drawing.Point(13, 292);
+            this.Copy_Files.Location = new System.Drawing.Point(13, 310);
             this.Copy_Files.Name = "Copy_Files";
-            this.Copy_Files.Size = new System.Drawing.Size(455, 29);
+            this.Copy_Files.Size = new System.Drawing.Size(455, 46);
             this.Copy_Files.TabIndex = 2;
-            this.Copy_Files.Text = "Másolás";
+            this.Copy_Files.Text = "Copy_Files";
             this.Copy_Files.UseVisualStyleBackColor = true;
             this.Copy_Files.Click += new System.EventHandler(this.Change_Names_Click);
             // 
@@ -104,22 +103,12 @@
             this.eleresi_ut_2.TabIndex = 6;
             this.eleresi_ut_2.Text = "...";
             // 
-            // delete
-            // 
-            this.delete.Location = new System.Drawing.Point(393, 357);
-            this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(75, 23);
-            this.delete.TabIndex = 7;
-            this.delete.Text = "Delete";
-            this.delete.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Blue;
             this.ClientSize = new System.Drawing.Size(480, 392);
-            this.Controls.Add(this.delete);
             this.Controls.Add(this.eleresi_ut_2);
             this.Controls.Add(this.select_folder);
             this.Controls.Add(this.eleresi_ut);
@@ -144,7 +133,6 @@
         private System.Windows.Forms.TextBox eleresi_ut;
         private System.Windows.Forms.Button select_folder;
         private System.Windows.Forms.TextBox eleresi_ut_2;
-        private System.Windows.Forms.Button delete;
     }
 }
 
