@@ -60,31 +60,43 @@ namespace Renaming_Prog
             string sourcePath = eleresi_ut.Text;
             string targetPath = eleresi_ut_2.Text;
 
-            
-            if (!Directory.Exists(targetPath))
+            try
             {
-                Directory.CreateDirectory(targetPath);
+                if (!Directory.Exists(targetPath))
+                {
+                    Directory.CreateDirectory(targetPath);
+                }
+                foreach (var srcPath in Directory.GetFiles(sourcePath))
+                {
+
+                    string CreatedON = "" + File.GetCreationTime(srcPath);
+
+                    //replaces the ( ':' and the '.' in the files name
+                    CreatedON = CreatedON.Replace(".", "_");
+                    CreatedON = CreatedON.Replace(":", "_");
+
+                    //Gets the file's format (like png or jpeg)
+                    string ext = Path.GetExtension(srcPath);
+
+                    //Adds the targetpath, the date of creation and the file's format
+                    string pathMove = targetPath + @"\" + (CreatedON) + ext;
+
+                    //Copy the file from sourcepath and place into mentioned target path, 
+                    //Overwrite the file if same file is exist in target path               
+
+
+                    File.Copy(srcPath, pathMove, true);
+
+                }
+
+                Info_Form info_Form = new Info_Form();
+                info_Form.Show();
             }
-            foreach (var srcPath in Directory.GetFiles(sourcePath))
+            catch
             {
-
-                string CreatedON = "" + File.GetCreationTime(srcPath);
-             
-                //replaces the ( ':' and the '.' in the files name
-                CreatedON = CreatedON.Replace("." , "_");
-                CreatedON = CreatedON.Replace(":", "_");
-
-                //Gets the file's format (like png or jpeg
-                string ext = Path.GetExtension(srcPath);
-
-                //Adds the targetpath, the date of creation and the file's format
-                string pathMove = targetPath + @"\"+(CreatedON) + ext;
-                
-                //Copy the file from sourcepath and place into mentioned target path, 
-                //Overwrite the file if same file is exist in target path               
-                File.Copy(srcPath, pathMove, true);
-            
-            }            
+                Error error = new Error();
+                error.Show();
+            }
 
         }
 
