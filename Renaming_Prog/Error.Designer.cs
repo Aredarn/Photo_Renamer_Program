@@ -73,6 +73,7 @@ namespace Renaming_Prog
             this.Controls.Add(this.Confirm);
             this.Controls.Add(this.Error_label);
             this.Name = "Error";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Error";
             this.ResumeLayout(false);
             this.PerformLayout();

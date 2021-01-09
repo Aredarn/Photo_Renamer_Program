@@ -61,6 +61,7 @@ namespace Renaming_Prog
             this.Controls.Add(this.Info);
             this.Controls.Add(this.Confirm);
             this.Name = "Info_Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Info_Form";
             this.ResumeLayout(false);
             this.PerformLayout();

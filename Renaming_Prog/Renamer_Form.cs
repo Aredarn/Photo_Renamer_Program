@@ -54,7 +54,7 @@ namespace Renaming_Prog
         }
 
 
-        private void Change_Names_Click(object sender, EventArgs e)
+        public void Change_Names_Click(object sender, EventArgs e)
         {
 
             string sourcePath = eleresi_ut.Text;
@@ -71,6 +71,7 @@ namespace Renaming_Prog
 
                     string CreatedON = "" + File.GetCreationTime(srcPath);
 
+                
                     //replaces the ( ':' and the '.' in the files name
                     CreatedON = CreatedON.Replace(".", "_");
                     CreatedON = CreatedON.Replace(":", "_");
@@ -83,10 +84,8 @@ namespace Renaming_Prog
 
                     //Copy the file from sourcepath and place into mentioned target path, 
                     //Overwrite the file if same file is exist in target path               
-
-
+                    listBoxphotosAfter.Items.Add(CreatedON + ext);
                     File.Copy(srcPath, pathMove, true);
-
                 }
 
                 Info_Form info_Form = new Info_Form();
@@ -102,7 +101,7 @@ namespace Renaming_Prog
 
         private void listBoxphotosBefore_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            int index = this.listBoxphotosBefore.IndexFromPoint(e.Location);
+               int index = this.listBoxphotosBefore.IndexFromPoint(e.Location);
             listBoxphotosAfter.Items.Add(listBoxphotosBefore.SelectedItem); 
         }
     }
