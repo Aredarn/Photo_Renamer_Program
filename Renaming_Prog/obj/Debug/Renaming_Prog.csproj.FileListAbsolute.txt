@@ -19,3 +19,4 @@ E:\Programos\Finished\Renaming_Prog\obj\Debug\Renaming_Prog.pdb
 E:\Programos\Finished\Renaming_Prog\obj\Debug\Renaming_Prog.Renamer_Form.resources
 E:\Programos\Finished\Renaming_Prog\obj\Debug\Renaming_Prog.Info_Form.resources
 E:\Programos\Finished\Renaming_Prog\obj\Debug\Renaming_Prog.Error.resources
+E:\Programos\Finished\Renaming_Prog\obj\Debug\Renaming_Prog.csprojAssemblyReference.cache

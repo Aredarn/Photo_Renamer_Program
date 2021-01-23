@@ -25,6 +25,8 @@ namespace Renaming_Prog
 
         private void button1_Click(object sender, EventArgs e)
         {
+            listBoxphotosBefore.Items.Clear();
+
             if (FolderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
                 eleresi_ut.Text = FolderBrowserDialog.SelectedPath;
@@ -34,11 +36,15 @@ namespace Renaming_Prog
             FileInfo[] Files = d.GetFiles("*"); //Getting Text files
             string str = "";
 
+            int db = 0;
             foreach (FileInfo file in Files)
             {
+                db++;
                 listBoxphotosBefore.Items.Add(file);
                 str = str + ", " + file.Name;
             }
+
+            Lenght.Text = ""+ db;
         }
 
         private void select_folder_Click(object sender, EventArgs e)

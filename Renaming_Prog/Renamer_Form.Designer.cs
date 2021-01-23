@@ -37,6 +37,7 @@
             this.select_folder = new System.Windows.Forms.Button();
             this.eleresi_ut_2 = new System.Windows.Forms.TextBox();
             this.Credit = new System.Windows.Forms.Label();
+            this.Lenght = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Select_Photos
@@ -61,7 +62,7 @@
             // 
             // Copy_Files
             // 
-            this.Copy_Files.Location = new System.Drawing.Point(12, 386);
+            this.Copy_Files.Location = new System.Drawing.Point(12, 406);
             this.Copy_Files.Name = "Copy_Files";
             this.Copy_Files.Size = new System.Drawing.Size(455, 46);
             this.Copy_Files.TabIndex = 2;
@@ -107,18 +108,28 @@
             // Credit
             // 
             this.Credit.AutoSize = true;
-            this.Credit.Location = new System.Drawing.Point(333, 439);
+            this.Credit.Location = new System.Drawing.Point(333, 459);
             this.Credit.Name = "Credit";
             this.Credit.Size = new System.Drawing.Size(139, 13);
             this.Credit.TabIndex = 7;
             this.Credit.Text = "Developer: Martin Mészáros";
+            // 
+            // Lenght
+            // 
+            this.Lenght.AutoSize = true;
+            this.Lenght.Location = new System.Drawing.Point(13, 387);
+            this.Lenght.Name = "Lenght";
+            this.Lenght.Size = new System.Drawing.Size(13, 13);
+            this.Lenght.TabIndex = 8;
+            this.Lenght.Text = "0";
             // 
             // Renamer_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Blue;
-            this.ClientSize = new System.Drawing.Size(484, 461);
+            this.ClientSize = new System.Drawing.Size(484, 476);
+            this.Controls.Add(this.Lenght);
             this.Controls.Add(this.Credit);
             this.Controls.Add(this.eleresi_ut_2);
             this.Controls.Add(this.select_folder);
@@ -146,6 +157,7 @@
         private System.Windows.Forms.Button select_folder;
         private System.Windows.Forms.TextBox eleresi_ut_2;
         private System.Windows.Forms.Label Credit;
+        private System.Windows.Forms.Label Lenght;
     }
 }
 
