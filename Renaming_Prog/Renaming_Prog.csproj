@@ -46,33 +46,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Error.cs">
+    <Compile Include="Forms\Error.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Error.Designer.cs">
+    <Compile Include="Forms\Error.Designer.cs">
       <DependentUpon>Error.cs</DependentUpon>
     </Compile>
-    <Compile Include="Info_Form.cs">
+    <Compile Include="Forms\Info_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Info_Form.Designer.cs">
+    <Compile Include="Forms\Info_Form.Designer.cs">
       <DependentUpon>Info_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Renamer_Form.cs">
+    <Compile Include="Forms\Renamer_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Renamer_Form.Designer.cs">
+    <Compile Include="Forms\Renamer_Form.Designer.cs">
       <DependentUpon>Renamer_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Error.resx">
+    <EmbeddedResource Include="Forms\Error.resx">
       <DependentUpon>Error.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Info_Form.resx">
+    <EmbeddedResource Include="Forms\Info_Form.resx">
       <DependentUpon>Info_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Renamer_Form.resx">
+    <EmbeddedResource Include="Forms\Renamer_Form.resx">
       <DependentUpon>Renamer_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
