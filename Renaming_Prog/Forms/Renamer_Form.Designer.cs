@@ -38,6 +38,7 @@
             this.eleresi_ut_2 = new System.Windows.Forms.TextBox();
             this.Credit = new System.Windows.Forms.Label();
             this.Lenght = new System.Windows.Forms.Label();
+            this.Copied_files = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Select_Photos
@@ -59,7 +60,7 @@
             this.listBoxphotosBefore.Name = "listBoxphotosBefore";
             this.listBoxphotosBefore.Size = new System.Drawing.Size(217, 264);
             this.listBoxphotosBefore.TabIndex = 1;
-            //this.listBoxphotosBefore.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBoxphotosBefore_MouseDoubleClick);
+            this.listBoxphotosBefore.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBoxphotosBefore_MouseDoubleClick_1);
             // 
             // Copy_Files
             // 
@@ -128,12 +129,21 @@
             this.Lenght.TabIndex = 8;
             this.Lenght.Text = "0";
             // 
+            // Copied_files
+            // 
+            this.Copied_files.AutoSize = true;
+            this.Copied_files.Location = new System.Drawing.Point(381, 406);
+            this.Copied_files.Name = "Copied_files";
+            this.Copied_files.Size = new System.Drawing.Size(0, 13);
+            this.Copied_files.TabIndex = 9;
+            // 
             // Renamer_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Blue;
             this.ClientSize = new System.Drawing.Size(484, 496);
+            this.Controls.Add(this.Copied_files);
             this.Controls.Add(this.Lenght);
             this.Controls.Add(this.Credit);
             this.Controls.Add(this.eleresi_ut_2);
@@ -164,6 +174,7 @@
         private System.Windows.Forms.TextBox eleresi_ut_2;
         private System.Windows.Forms.Label Credit;
         private System.Windows.Forms.Label Lenght;
+        private System.Windows.Forms.Label Copied_files;
     }
 }
 

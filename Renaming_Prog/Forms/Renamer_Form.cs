@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.IO.IsolatedStorage;
@@ -67,6 +68,8 @@ namespace Renaming_Prog
             string targetPath = eleresi_ut_2.Text;
             string LastFile = "";
             int LastFileCount = 0;
+            long size = 0;
+            int CopiedFiles = 0;
             try
             {
                 if (!Directory.Exists(targetPath))
@@ -75,6 +78,7 @@ namespace Renaming_Prog
                 }
                 foreach (var srcPath in Directory.GetFiles(sourcePath))
                 {
+                    size = srcPath.Length;
                     string CreatedON = "" + File.GetLastWriteTime(srcPath);
 
 
@@ -104,6 +108,8 @@ namespace Renaming_Prog
 
                     //Copy the file from sourcepath and place into mentioned target path, 
                     //Overwrite the file if same file is exist in target path               
+                    CopiedFiles++;
+                    Copied_files.Text = $"Files copied: {CopiedFiles}";
                     listBoxphotosAfter.Items.Add(CreatedON + ext);
                     File.Copy(srcPath, pathMove, true);
                 }
@@ -119,11 +125,10 @@ namespace Renaming_Prog
 
         }
 
-      /*  private void listBoxphotosBefore_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void listBoxphotosBefore_MouseDoubleClick_1(object sender, MouseEventArgs e)
         {
-               int index = this.listBoxphotosBefore.IndexFromPoint(e.Location);
-            listBoxphotosAfter.Items.Add(listBoxphotosBefore.SelectedItem); 
+            int index = this.listBoxphotosBefore.IndexFromPoint(e.Location);
+            listBoxphotosAfter.Items.Add(listBoxphotosBefore.SelectedItem);
         }
-      */
     }
 }
