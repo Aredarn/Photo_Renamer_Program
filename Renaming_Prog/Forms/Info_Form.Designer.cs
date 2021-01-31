@@ -35,7 +35,7 @@ namespace Renaming_Prog
             // 
             // Confirm
             // 
-            this.Confirm.Location = new System.Drawing.Point(90, 63);
+            this.Confirm.Location = new System.Drawing.Point(67, 72);
             this.Confirm.Name = "Confirm";
             this.Confirm.Size = new System.Drawing.Size(75, 23);
             this.Confirm.TabIndex = 0;
@@ -46,18 +46,19 @@ namespace Renaming_Prog
             // Info
             // 
             this.Info.AutoSize = true;
-            this.Info.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Info.Location = new System.Drawing.Point(-1, 26);
+            this.Info.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Info.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Info.Location = new System.Drawing.Point(14, 20);
             this.Info.Name = "Info";
-            this.Info.Size = new System.Drawing.Size(264, 18);
+            this.Info.Size = new System.Drawing.Size(191, 25);
             this.Info.TabIndex = 1;
-            this.Info.Text = "A képek sikeresen másolva lettek!";
+            this.Info.Text = "Successful copy!";
             // 
             // Info_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(260, 107);
+            this.ClientSize = new System.Drawing.Size(217, 107);
             this.Controls.Add(this.Info);
             this.Controls.Add(this.Confirm);
             this.Name = "Info_Form";

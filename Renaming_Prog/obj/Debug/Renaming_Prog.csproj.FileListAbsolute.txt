@@ -32,3 +32,4 @@ E:\Programos\Unfinished\Renaming_Prog\obj\Debug\Renaming_Prog.csproj.GenerateRes
 E:\Programos\Unfinished\Renaming_Prog\obj\Debug\Renaming_Prog.csproj.CoreCompileInputs.cache
 E:\Programos\Unfinished\Renaming_Prog\obj\Debug\Renaming_Prog.exe
 E:\Programos\Unfinished\Renaming_Prog\obj\Debug\Renaming_Prog.pdb
+E:\Programos\Unfinished\Renaming_Prog\obj\Debug\Renaming_Prog.Forms.Loading_TXT.resources

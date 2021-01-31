@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Renaming_Prog.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -70,6 +71,12 @@ namespace Renaming_Prog
             int LastFileCount = 0;
             long size = 0;
             int CopiedFiles = 0;
+
+
+            Loading_TXT loading = new Loading_TXT();
+            loading.Show();
+            System.Threading.Thread.Sleep(400);
+
             try
             {
                 if (!Directory.Exists(targetPath))
@@ -114,6 +121,8 @@ namespace Renaming_Prog
                     File.Copy(srcPath, pathMove, true);
                 }
 
+
+                loading.Close();
                 Info_Form info_Form = new Info_Form();
                 info_Form.Show();
             }

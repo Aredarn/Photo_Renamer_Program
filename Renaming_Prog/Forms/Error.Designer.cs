@@ -38,11 +38,11 @@ namespace Renaming_Prog
             // 
             this.Error_label.AutoSize = true;
             this.Error_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Error_label.Location = new System.Drawing.Point(-1, 9);
+            this.Error_label.Location = new System.Drawing.Point(17, 22);
             this.Error_label.Name = "Error_label";
-            this.Error_label.Size = new System.Drawing.Size(204, 16);
+            this.Error_label.Size = new System.Drawing.Size(166, 16);
             this.Error_label.TabIndex = 0;
-            this.Error_label.Text = "Hiba! Nincs megadva az útvonal!";
+            this.Error_label.Text = "Error!! No destinition given!";
             // 
             // Confirm
             // 
@@ -58,11 +58,11 @@ namespace Renaming_Prog
             // 
             this.Errorlabel2.AutoSize = true;
             this.Errorlabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Errorlabel2.Location = new System.Drawing.Point(2, 34);
+            this.Errorlabel2.Location = new System.Drawing.Point(26, 49);
             this.Errorlabel2.Name = "Errorlabel2";
-            this.Errorlabel2.Size = new System.Drawing.Size(201, 16);
+            this.Errorlabel2.Size = new System.Drawing.Size(157, 16);
             this.Errorlabel2.TabIndex = 2;
-            this.Errorlabel2.Text = "Adja meg helyesen az útvonalat!";
+            this.Errorlabel2.Text = "Give a correct destinition!";
             // 
             // Error
             // 
