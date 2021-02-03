@@ -1,0 +1,35 @@
+E:\Programozás\c# prgramos\Renaming_Prog\bin\Debug\Renaming_Prog.exe.config
+E:\Programozás\c# prgramos\Renaming_Prog\bin\Debug\Renaming_Prog.exe
+E:\Programozás\c# prgramos\Renaming_Prog\bin\Debug\Renaming_Prog.pdb
+E:\Programozás\c# prgramos\Renaming_Prog\obj\Debug\Renaming_Prog.csprojAssemblyReference.cache
+E:\Programozás\c# prgramos\Renaming_Prog\obj\Debug\Renaming_Prog.Form1.resources
+E:\Programozás\c# prgramos\Renaming_Prog\obj\Debug\Renaming_Prog.Properties.Resources.resources
+E:\Programozás\c# prgramos\Renaming_Prog\obj\Debug\Renaming_Prog.csproj.GenerateResource.cache
+E:\Programozás\c# prgramos\Renaming_Prog\obj\Debug\Renaming_Prog.csproj.CoreCompileInputs.cache
+E:\Programozás\c# prgramos\Renaming_Prog\obj\Debug\Renaming_Prog.exe
+E:\Programozás\c# prgramos\Renaming_Prog\obj\Debug\Renaming_Prog.pdb
+E:\Programos\Finished\Renaming_Prog\bin\Debug\Renaming_Prog.exe.config
+E:\Programos\Finished\Renaming_Prog\bin\Debug\Renaming_Prog.exe
+E:\Programos\Finished\Renaming_Prog\bin\Debug\Renaming_Prog.pdb
+E:\Programos\Finished\Renaming_Prog\obj\Debug\Renaming_Prog.Properties.Resources.resources
+E:\Programos\Finished\Renaming_Prog\obj\Debug\Renaming_Prog.csproj.GenerateResource.cache
+E:\Programos\Finished\Renaming_Prog\obj\Debug\Renaming_Prog.csproj.CoreCompileInputs.cache
+E:\Programos\Finished\Renaming_Prog\obj\Debug\Renaming_Prog.exe
+E:\Programos\Finished\Renaming_Prog\obj\Debug\Renaming_Prog.pdb
+E:\Programos\Finished\Renaming_Prog\obj\Debug\Renaming_Prog.Renamer_Form.resources
+E:\Programos\Finished\Renaming_Prog\obj\Debug\Renaming_Prog.Info_Form.resources
+E:\Programos\Finished\Renaming_Prog\obj\Debug\Renaming_Prog.Error.resources
+E:\Programos\Finished\Renaming_Prog\obj\Debug\Renaming_Prog.csprojAssemblyReference.cache
+E:\Programos\Unfinished\Renaming_Prog\bin\Debug\Renaming_Prog.exe.config
+E:\Programos\Unfinished\Renaming_Prog\bin\Debug\Renaming_Prog.exe
+E:\Programos\Unfinished\Renaming_Prog\bin\Debug\Renaming_Prog.pdb
+E:\Programos\Unfinished\Renaming_Prog\obj\Debug\Renaming_Prog.csprojAssemblyReference.cache
+E:\Programos\Unfinished\Renaming_Prog\obj\Debug\Renaming_Prog.Error.resources
+E:\Programos\Unfinished\Renaming_Prog\obj\Debug\Renaming_Prog.Info_Form.resources
+E:\Programos\Unfinished\Renaming_Prog\obj\Debug\Renaming_Prog.Renamer_Form.resources
+E:\Programos\Unfinished\Renaming_Prog\obj\Debug\Renaming_Prog.Properties.Resources.resources
+E:\Programos\Unfinished\Renaming_Prog\obj\Debug\Renaming_Prog.csproj.GenerateResource.cache
+E:\Programos\Unfinished\Renaming_Prog\obj\Debug\Renaming_Prog.csproj.CoreCompileInputs.cache
+E:\Programos\Unfinished\Renaming_Prog\obj\Debug\Renaming_Prog.exe
+E:\Programos\Unfinished\Renaming_Prog\obj\Debug\Renaming_Prog.pdb
+E:\Programos\Unfinished\Renaming_Prog\obj\Debug\Renaming_Prog.Forms.Loading_TXT.resources
