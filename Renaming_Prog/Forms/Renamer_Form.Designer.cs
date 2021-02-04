@@ -39,13 +39,14 @@
             this.Credit = new System.Windows.Forms.Label();
             this.Lenght = new System.Windows.Forms.Label();
             this.Copied_files = new System.Windows.Forms.Label();
+            this.Design_Changer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Select_Photos
             // 
             this.Select_Photos.BackColor = System.Drawing.Color.Lime;
             this.Select_Photos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Select_Photos.Location = new System.Drawing.Point(12, 31);
+            this.Select_Photos.Location = new System.Drawing.Point(16, 42);
             this.Select_Photos.Name = "Select_Photos";
             this.Select_Photos.Size = new System.Drawing.Size(216, 63);
             this.Select_Photos.TabIndex = 0;
@@ -56,7 +57,7 @@
             // listBoxphotosBefore
             // 
             this.listBoxphotosBefore.FormattingEnabled = true;
-            this.listBoxphotosBefore.Location = new System.Drawing.Point(12, 126);
+            this.listBoxphotosBefore.Location = new System.Drawing.Point(16, 137);
             this.listBoxphotosBefore.Name = "listBoxphotosBefore";
             this.listBoxphotosBefore.Size = new System.Drawing.Size(217, 264);
             this.listBoxphotosBefore.TabIndex = 1;
@@ -67,7 +68,7 @@
             this.Copy_Files.BackColor = System.Drawing.Color.Lime;
             this.Copy_Files.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Copy_Files.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Copy_Files.Location = new System.Drawing.Point(12, 425);
+            this.Copy_Files.Location = new System.Drawing.Point(16, 436);
             this.Copy_Files.Name = "Copy_Files";
             this.Copy_Files.Size = new System.Drawing.Size(455, 46);
             this.Copy_Files.TabIndex = 2;
@@ -78,14 +79,14 @@
             // listBoxphotosAfter
             // 
             this.listBoxphotosAfter.FormattingEnabled = true;
-            this.listBoxphotosAfter.Location = new System.Drawing.Point(250, 126);
+            this.listBoxphotosAfter.Location = new System.Drawing.Point(254, 137);
             this.listBoxphotosAfter.Name = "listBoxphotosAfter";
             this.listBoxphotosAfter.Size = new System.Drawing.Size(218, 264);
             this.listBoxphotosAfter.TabIndex = 3;
             // 
             // eleresi_ut
             // 
-            this.eleresi_ut.Location = new System.Drawing.Point(12, 100);
+            this.eleresi_ut.Location = new System.Drawing.Point(16, 111);
             this.eleresi_ut.Name = "eleresi_ut";
             this.eleresi_ut.Size = new System.Drawing.Size(216, 20);
             this.eleresi_ut.TabIndex = 4;
@@ -95,7 +96,7 @@
             // 
             this.select_folder.BackColor = System.Drawing.Color.Lime;
             this.select_folder.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.select_folder.Location = new System.Drawing.Point(250, 31);
+            this.select_folder.Location = new System.Drawing.Point(254, 42);
             this.select_folder.Name = "select_folder";
             this.select_folder.Size = new System.Drawing.Size(218, 63);
             this.select_folder.TabIndex = 5;
@@ -105,7 +106,7 @@
             // 
             // eleresi_ut_2
             // 
-            this.eleresi_ut_2.Location = new System.Drawing.Point(249, 100);
+            this.eleresi_ut_2.Location = new System.Drawing.Point(253, 111);
             this.eleresi_ut_2.Name = "eleresi_ut_2";
             this.eleresi_ut_2.Size = new System.Drawing.Size(218, 20);
             this.eleresi_ut_2.TabIndex = 6;
@@ -114,7 +115,7 @@
             // Credit
             // 
             this.Credit.AutoSize = true;
-            this.Credit.Location = new System.Drawing.Point(333, 478);
+            this.Credit.Location = new System.Drawing.Point(337, 489);
             this.Credit.Name = "Credit";
             this.Credit.Size = new System.Drawing.Size(139, 13);
             this.Credit.TabIndex = 7;
@@ -123,7 +124,7 @@
             // Lenght
             // 
             this.Lenght.AutoSize = true;
-            this.Lenght.Location = new System.Drawing.Point(13, 406);
+            this.Lenght.Location = new System.Drawing.Point(17, 417);
             this.Lenght.Name = "Lenght";
             this.Lenght.Size = new System.Drawing.Size(13, 13);
             this.Lenght.TabIndex = 8;
@@ -132,17 +133,33 @@
             // Copied_files
             // 
             this.Copied_files.AutoSize = true;
-            this.Copied_files.Location = new System.Drawing.Point(381, 406);
+            this.Copied_files.Location = new System.Drawing.Point(385, 417);
             this.Copied_files.Name = "Copied_files";
-            this.Copied_files.Size = new System.Drawing.Size(0, 13);
+            this.Copied_files.Size = new System.Drawing.Size(13, 13);
             this.Copied_files.TabIndex = 9;
+            this.Copied_files.Text = "0";
+            // 
+            // Design_Changer
+            // 
+            this.Design_Changer.BackColor = System.Drawing.Color.Transparent;
+            this.Design_Changer.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Design_Changer.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Design_Changer.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Design_Changer.Location = new System.Drawing.Point(446, 6);
+            this.Design_Changer.Name = "Design_Changer";
+            this.Design_Changer.Size = new System.Drawing.Size(30, 30);
+            this.Design_Changer.TabIndex = 10;
+            this.Design_Changer.Text = "UI";
+            this.Design_Changer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Design_Changer.UseVisualStyleBackColor = false;
             // 
             // Renamer_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Blue;
-            this.ClientSize = new System.Drawing.Size(484, 496);
+            this.ClientSize = new System.Drawing.Size(484, 506);
+            this.Controls.Add(this.Design_Changer);
             this.Controls.Add(this.Copied_files);
             this.Controls.Add(this.Lenght);
             this.Controls.Add(this.Credit);
@@ -175,6 +192,7 @@
         private System.Windows.Forms.Label Credit;
         private System.Windows.Forms.Label Lenght;
         private System.Windows.Forms.Label Copied_files;
+        private System.Windows.Forms.Button Design_Changer;
     }
 }
 

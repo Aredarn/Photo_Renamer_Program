@@ -88,37 +88,45 @@ namespace Renaming_Prog
                     size = srcPath.Length;
                     string CreatedON = "" + File.GetLastWriteTime(srcPath);
 
-
-                    //replaces the ( ':' and the '.' in the files name
-                    CreatedON = CreatedON.Replace(".", "_");
-                    CreatedON = CreatedON.Replace(":", "_");
-
-                    if (CreatedON == LastFile) 
-                    {
-                        
-                        LastFileCount++;
-                        CreatedON = CreatedON + LastFile;
-                    }
-                    else
-                    {
-                        LastFile = CreatedON;
-                        LastFileCount = 0;
-                    }
-                    
-
-
                     //Gets the file's format (like png or jpeg)
                     string ext = Path.GetExtension(srcPath);
 
-                    //Adds the targetpath, the date of creation and the file's format
-                    string pathMove = targetPath + @"\" + (CreatedON) + ext;
+                    bool allowFile = false;
 
-                    //Copy the file from sourcepath and place into mentioned target path, 
-                    //Overwrite the file if same file is exist in target path               
-                    CopiedFiles++;
-                    Copied_files.Text = $"Files copied: {CopiedFiles}";
-                    listBoxphotosAfter.Items.Add(CreatedON + ext);
-                    File.Copy(srcPath, pathMove, true);
+                    if (ext == ".png" || ext == ".jpeg" || ext == ".jpg")
+                        allowFile = true;
+                    
+
+                    if (allowFile)
+                    {
+                        //replaces the ( ':' and the '.' in the files name
+                        CreatedON = CreatedON.Replace(".", "_");
+                        CreatedON = CreatedON.Replace(":", "_");
+
+                        if (CreatedON == LastFile)
+                        {
+
+                            LastFileCount++;
+                            CreatedON = CreatedON + LastFile;
+                        }
+                        else
+                        {
+                            LastFile = CreatedON;
+                            LastFileCount = 0;
+                        }
+
+
+                        //Adds the targetpath, the date of creation and the file's format
+                        string pathMove = targetPath + @"\" + (CreatedON) + ext;
+
+                        //Copy the file from sourcepath and place into mentioned target path, 
+                        //Overwrite the file if same file is exist in target path               
+                        CopiedFiles++;
+                        Copied_files.Text = $"Files copied: {CopiedFiles}";
+                        listBoxphotosAfter.Items.Add(CreatedON + ext);
+                        File.Copy(srcPath, pathMove, true);
+                    }
+                    
                 }
 
 
