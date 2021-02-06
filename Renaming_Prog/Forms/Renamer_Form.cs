@@ -30,11 +30,9 @@ namespace Renaming_Prog
             string str;
             FileInfo[] Files;
             if (FolderBrowserDialog.ShowDialog() == DialogResult.OK)
-            {
-                eleresi_ut.Text = FolderBrowserDialog.SelectedPath;
-            }
             try 
             {
+                eleresi_ut.Text = FolderBrowserDialog.SelectedPath;
                 DirectoryInfo d = new DirectoryInfo(eleresi_ut.Text);
                 Files = d.GetFiles("*"); //Getting Text files
                 str = "";
@@ -59,12 +57,16 @@ namespace Renaming_Prog
         {
 
             if (FolderBrowserDialog.ShowDialog() == DialogResult.OK)
+            try
             {
+                DirectoryInfo d = new DirectoryInfo(eleresi_ut_2.Text);
+                FileInfo[] Files = d.GetFiles("*"); //This line detects the files
                 eleresi_ut_2.Text = FolderBrowserDialog.SelectedPath;
             }
-
-            DirectoryInfo d = new DirectoryInfo(eleresi_ut_2.Text);           
-            FileInfo[] Files = d.GetFiles("*"); //This line detects the files
+            catch
+            {
+                eleresi_ut_2.Text = "No path given";
+            }
         }
 
 
@@ -83,7 +85,7 @@ namespace Renaming_Prog
 
             try
             {
-                if (!Directory.Exists(targetPath))
+                if (!Directory.Exists(targetPath) ||  eleresi_ut.Text != "No path given")
                 {
                     Directory.CreateDirectory(targetPath);
                     loading.Show();
@@ -144,6 +146,8 @@ namespace Renaming_Prog
 
         }
 
+
+        //Future update:
         private void listBoxphotosBefore_MouseDoubleClick_1(object sender, MouseEventArgs e)
         {
             int index = this.listBoxphotosBefore.IndexFromPoint(e.Location);
