@@ -30,7 +30,6 @@ namespace Renaming_Prog
             string str;
             FileInfo[] Files;
             if (FolderBrowserDialog.ShowDialog() == DialogResult.OK)
-            try 
             {
                 eleresi_ut.Text = FolderBrowserDialog.SelectedPath;
                 DirectoryInfo d = new DirectoryInfo(eleresi_ut.Text);
@@ -46,26 +45,16 @@ namespace Renaming_Prog
 
                 Lenght.Text = "" + db;
             }
-            catch
-            {
-                eleresi_ut.Text = "No path given";
-            }
- 
         }
 
         private void select_folder_Click(object sender, EventArgs e)
         {
 
             if (FolderBrowserDialog.ShowDialog() == DialogResult.OK)
-            try
             {
+                eleresi_ut_2.Text = FolderBrowserDialog.SelectedPath;
                 DirectoryInfo d = new DirectoryInfo(eleresi_ut_2.Text);
                 FileInfo[] Files = d.GetFiles("*"); //This line detects the files
-                eleresi_ut_2.Text = FolderBrowserDialog.SelectedPath;
-            }
-            catch
-            {
-                eleresi_ut_2.Text = "No path given";
             }
         }
 

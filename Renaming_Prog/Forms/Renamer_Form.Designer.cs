@@ -68,12 +68,13 @@
             // 
             this.Copy_Files.BackColor = System.Drawing.Color.Lime;
             this.Copy_Files.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Copy_Files.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Copy_Files.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Copy_Files.Location = new System.Drawing.Point(16, 436);
             this.Copy_Files.Name = "Copy_Files";
             this.Copy_Files.Size = new System.Drawing.Size(455, 46);
             this.Copy_Files.TabIndex = 2;
-            this.Copy_Files.Text = "Copy_Files";
+            this.Copy_Files.Text = "Copy Files";
             this.Copy_Files.UseVisualStyleBackColor = false;
             this.Copy_Files.Click += new System.EventHandler(this.Change_Names_Click);
             // 
