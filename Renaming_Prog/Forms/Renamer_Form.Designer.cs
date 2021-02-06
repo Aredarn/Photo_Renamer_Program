@@ -45,12 +45,13 @@
             // Select_Photos
             // 
             this.Select_Photos.BackColor = System.Drawing.Color.Lime;
+            this.Select_Photos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Select_Photos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Select_Photos.Location = new System.Drawing.Point(16, 42);
             this.Select_Photos.Name = "Select_Photos";
             this.Select_Photos.Size = new System.Drawing.Size(216, 63);
             this.Select_Photos.TabIndex = 0;
-            this.Select_Photos.Text = "Select a folder (From where to copy)";
+            this.Select_Photos.Text = "Click here to select a folder (From where to copy)";
             this.Select_Photos.UseVisualStyleBackColor = false;
             this.Select_Photos.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -90,17 +91,17 @@
             this.eleresi_ut.Name = "eleresi_ut";
             this.eleresi_ut.Size = new System.Drawing.Size(216, 20);
             this.eleresi_ut.TabIndex = 4;
-            this.eleresi_ut.Text = "C:\\\\";
             // 
             // select_folder
             // 
             this.select_folder.BackColor = System.Drawing.Color.Lime;
+            this.select_folder.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.select_folder.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.select_folder.Location = new System.Drawing.Point(254, 42);
             this.select_folder.Name = "select_folder";
             this.select_folder.Size = new System.Drawing.Size(218, 63);
             this.select_folder.TabIndex = 5;
-            this.select_folder.Text = "Select a folder (To where to copy)";
+            this.select_folder.Text = "Click here to select a folder (To where to copy)";
             this.select_folder.UseVisualStyleBackColor = false;
             this.select_folder.Click += new System.EventHandler(this.select_folder_Click);
             // 
@@ -110,7 +111,6 @@
             this.eleresi_ut_2.Name = "eleresi_ut_2";
             this.eleresi_ut_2.Size = new System.Drawing.Size(218, 20);
             this.eleresi_ut_2.TabIndex = 6;
-            this.eleresi_ut_2.Text = "...";
             // 
             // Credit
             // 

@@ -19,7 +19,6 @@ namespace Renaming_Prog
         public Renamer_Form()
         {
             InitializeComponent();
- 
         }
         OpenFileDialog ofd = new OpenFileDialog();
 
@@ -28,25 +27,32 @@ namespace Renaming_Prog
         private void button1_Click(object sender, EventArgs e)
         {
             listBoxphotosBefore.Items.Clear();
-
+            string str;
+            FileInfo[] Files;
             if (FolderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
                 eleresi_ut.Text = FolderBrowserDialog.SelectedPath;
             }
-
-            DirectoryInfo d = new DirectoryInfo(eleresi_ut.Text);
-            FileInfo[] Files = d.GetFiles("*"); //Getting Text files
-            string str = "";
-
-            int db = 0;
-            foreach (FileInfo file in Files)
+            try 
             {
-                db++;
-                listBoxphotosBefore.Items.Add(file);
-                str = str + ", " + file.Name;
-            }
+                DirectoryInfo d = new DirectoryInfo(eleresi_ut.Text);
+                Files = d.GetFiles("*"); //Getting Text files
+                str = "";
+                int db = 0;
+                foreach (FileInfo file in Files)
+                {
+                    db++;
+                    listBoxphotosBefore.Items.Add(file);
+                    str = str + ", " + file.Name;
+                }
 
-            Lenght.Text = ""+ db;
+                Lenght.Text = "" + db;
+            }
+            catch
+            {
+                eleresi_ut.Text = "No path given";
+            }
+ 
         }
 
         private void select_folder_Click(object sender, EventArgs e)
@@ -67,21 +73,20 @@ namespace Renaming_Prog
 
             string sourcePath = eleresi_ut.Text;
             string targetPath = eleresi_ut_2.Text;
+            
+            
             string LastFile = "";
             int LastFileCount = 0;
             long size = 0;
             int CopiedFiles = 0;
-
-
             Loading_TXT loading = new Loading_TXT();
-            loading.Show();
-            System.Threading.Thread.Sleep(400);
 
             try
             {
                 if (!Directory.Exists(targetPath))
                 {
                     Directory.CreateDirectory(targetPath);
+                    loading.Show();
                 }
                 foreach (var srcPath in Directory.GetFiles(sourcePath))
                 {
@@ -126,10 +131,7 @@ namespace Renaming_Prog
                         listBoxphotosAfter.Items.Add(CreatedON + ext);
                         File.Copy(srcPath, pathMove, true);
                     }
-                    
                 }
-
-
                 loading.Close();
                 Info_Form info_Form = new Info_Form();
                 info_Form.Show();
