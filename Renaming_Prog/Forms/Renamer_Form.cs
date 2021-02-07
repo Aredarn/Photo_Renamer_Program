@@ -1,15 +1,6 @@
 ﻿using Renaming_Prog.Forms;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Drawing;
 using System.IO;
-using System.IO.IsolatedStorage;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Renaming_Prog
@@ -58,14 +49,13 @@ namespace Renaming_Prog
             }
         }
 
-
         public void Change_Names_Click(object sender, EventArgs e)
         {
 
             string sourcePath = eleresi_ut.Text;
             string targetPath = eleresi_ut_2.Text;
-            
-            
+
+
             string LastFile = "";
             int LastFileCount = 0;
             long size = 0;
@@ -74,7 +64,7 @@ namespace Renaming_Prog
 
             try
             {
-                if (!Directory.Exists(targetPath) ||  eleresi_ut.Text != "No path given")
+                if (!Directory.Exists(targetPath) || eleresi_ut.Text != "No path given")
                 {
                     Directory.CreateDirectory(targetPath);
                     loading.Show();
@@ -91,7 +81,7 @@ namespace Renaming_Prog
 
                     if (ext == ".png" || ext == ".jpeg" || ext == ".jpg")
                         allowFile = true;
-                    
+
 
                     if (allowFile)
                     {
@@ -136,11 +126,36 @@ namespace Renaming_Prog
         }
 
 
-        //Future update:
+        //This method allows the user to copy only one photo if clicked on
         private void listBoxphotosBefore_MouseDoubleClick_1(object sender, MouseEventArgs e)
         {
-            int index = this.listBoxphotosBefore.IndexFromPoint(e.Location);
-            listBoxphotosAfter.Items.Add(listBoxphotosBefore.SelectedItem);
+            string selectedFile = listBoxphotosBefore.GetItemText(listBoxphotosBefore.SelectedItem);                   
+            
+            string srcPath = eleresi_ut.Text + "\\" + selectedFile;
+            //Gets the file's format (like png or jpeg)
+            string ext = Path.GetExtension(srcPath);
+
+            bool allowFile = false;
+            if (ext == ".png" || ext == ".jpeg" || ext == ".jpg")               
+            allowFile = true;
+
+
+            if (allowFile)
+            {
+                string CreatedON = "\\" + File.GetLastWriteTime(srcPath);
+                CreatedON = CreatedON.Replace(".", "_");
+                CreatedON = CreatedON.Replace(":", "_");
+
+                
+                
+
+                string pathMove = eleresi_ut_2.Text + CreatedON + ext;
+
+                File.Copy(srcPath, pathMove, true);
+
+                listBoxphotosAfter.Items.Add(CreatedON + ext);
+            }
+
         }
     }
 }

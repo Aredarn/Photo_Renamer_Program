@@ -40,6 +40,7 @@
             this.Lenght = new System.Windows.Forms.Label();
             this.Copied_files = new System.Windows.Forms.Label();
             this.Design_Changer = new System.Windows.Forms.Button();
+            this.Help_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Select_Photos
@@ -154,12 +155,22 @@
             this.Design_Changer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Design_Changer.UseVisualStyleBackColor = false;
             // 
+            // Help_button
+            // 
+            this.Help_button.Location = new System.Drawing.Point(16, 13);
+            this.Help_button.Name = "Help_button";
+            this.Help_button.Size = new System.Drawing.Size(75, 23);
+            this.Help_button.TabIndex = 11;
+            this.Help_button.Text = "How to use";
+            this.Help_button.UseVisualStyleBackColor = true;
+            // 
             // Renamer_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Blue;
             this.ClientSize = new System.Drawing.Size(484, 506);
+            this.Controls.Add(this.Help_button);
             this.Controls.Add(this.Design_Changer);
             this.Controls.Add(this.Copied_files);
             this.Controls.Add(this.Lenght);
@@ -175,7 +186,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Renamer_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Copy_Rename_Program7";
+            this.Text = "Copy_Rename_Program";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,6 +205,7 @@
         private System.Windows.Forms.Label Lenght;
         private System.Windows.Forms.Label Copied_files;
         private System.Windows.Forms.Button Design_Changer;
+        private System.Windows.Forms.Button Help_button;
     }
 }
 
