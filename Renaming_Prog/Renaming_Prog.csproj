@@ -52,6 +52,12 @@
     <Compile Include="Forms\Error.Designer.cs">
       <DependentUpon>Error.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\HowToUse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HowToUse.Designer.cs">
+      <DependentUpon>HowToUse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Info_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Error.resx">
       <DependentUpon>Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HowToUse.resx">
+      <DependentUpon>HowToUse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Info_Form.resx">
       <DependentUpon>Info_Form.cs</DependentUpon>

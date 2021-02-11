@@ -122,7 +122,6 @@ namespace Renaming_Prog
                 Error error = new Error();
                 error.Show();
             }
-
         }
 
 
@@ -136,7 +135,7 @@ namespace Renaming_Prog
             string ext = Path.GetExtension(srcPath);
 
             bool allowFile = false;
-            if (ext == ".png" || ext == ".jpeg" || ext == ".jpg")               
+            if ((ext == ".png" || ext == ".jpeg" || ext == ".jpg") && eleresi_ut.Text != "" && eleresi_ut_2.Text != "")               
             allowFile = true;
 
 
@@ -146,8 +145,6 @@ namespace Renaming_Prog
                 CreatedON = CreatedON.Replace(".", "_");
                 CreatedON = CreatedON.Replace(":", "_");
 
-                
-                
 
                 string pathMove = eleresi_ut_2.Text + CreatedON + ext;
 
@@ -155,7 +152,11 @@ namespace Renaming_Prog
 
                 listBoxphotosAfter.Items.Add(CreatedON + ext);
             }
-
+            else
+            {
+                Error error = new Error();
+                error.Show();
+            }
         }
     }
 }

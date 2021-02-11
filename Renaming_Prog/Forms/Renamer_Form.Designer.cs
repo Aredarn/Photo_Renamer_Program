@@ -89,6 +89,7 @@
             // 
             // eleresi_ut
             // 
+            this.eleresi_ut.Enabled = false;
             this.eleresi_ut.Location = new System.Drawing.Point(16, 111);
             this.eleresi_ut.Name = "eleresi_ut";
             this.eleresi_ut.Size = new System.Drawing.Size(216, 20);
@@ -109,6 +110,7 @@
             // 
             // eleresi_ut_2
             // 
+            this.eleresi_ut_2.Enabled = false;
             this.eleresi_ut_2.Location = new System.Drawing.Point(253, 111);
             this.eleresi_ut_2.Name = "eleresi_ut_2";
             this.eleresi_ut_2.Size = new System.Drawing.Size(218, 20);
@@ -157,11 +159,12 @@
             // 
             // Help_button
             // 
+            this.Help_button.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Help_button.Location = new System.Drawing.Point(16, 13);
             this.Help_button.Name = "Help_button";
-            this.Help_button.Size = new System.Drawing.Size(75, 23);
+            this.Help_button.Size = new System.Drawing.Size(96, 23);
             this.Help_button.TabIndex = 11;
-            this.Help_button.Text = "How to use";
+            this.Help_button.Text = "Help how to use";
             this.Help_button.UseVisualStyleBackColor = true;
             // 
             // Renamer_Form
