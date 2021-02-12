@@ -29,6 +29,7 @@ namespace Renaming_Prog.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Loading_TXT));
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -49,6 +50,7 @@ namespace Renaming_Prog.Forms
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(228, 97);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Loading_TXT";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Loading";

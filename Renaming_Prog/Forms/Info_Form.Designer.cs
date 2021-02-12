@@ -29,6 +29,7 @@ namespace Renaming_Prog
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Info_Form));
             this.Confirm = new System.Windows.Forms.Button();
             this.Info = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -61,6 +62,7 @@ namespace Renaming_Prog
             this.ClientSize = new System.Drawing.Size(217, 107);
             this.Controls.Add(this.Info);
             this.Controls.Add(this.Confirm);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Info_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Info_Form";

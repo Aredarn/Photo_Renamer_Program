@@ -158,5 +158,17 @@ namespace Renaming_Prog
                 error.Show();
             }
         }
+
+        private void Help_button_Click(object sender, EventArgs e)
+        {
+            HowToUse help = new HowToUse();
+            help.Show();
+        }
+
+        private void Design_Changer_Click(object sender, EventArgs e)
+        {
+            UI_Changer looks = new UI_Changer();
+            looks.Show();
+        }
     }
 }

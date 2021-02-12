@@ -156,6 +156,7 @@
             this.Design_Changer.Text = "UI";
             this.Design_Changer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Design_Changer.UseVisualStyleBackColor = false;
+            this.Design_Changer.Click += new System.EventHandler(this.Design_Changer_Click);
             // 
             // Help_button
             // 
@@ -166,6 +167,7 @@
             this.Help_button.TabIndex = 11;
             this.Help_button.Text = "Help how to use";
             this.Help_button.UseVisualStyleBackColor = true;
+            this.Help_button.Click += new System.EventHandler(this.Help_button_Click);
             // 
             // Renamer_Form
             // 
