@@ -24,7 +24,7 @@ namespace Renaming_Prog
             {
                 eleresi_ut.Text = FolderBrowserDialog.SelectedPath;
                 DirectoryInfo d = new DirectoryInfo(eleresi_ut.Text);
-                Files = d.GetFiles("*"); //Getting Text files
+                Files = d.GetFiles("*"); //Getting all files
                 str = "";
                 int db = 0;
                 foreach (FileInfo file in Files)
@@ -40,7 +40,7 @@ namespace Renaming_Prog
 
         private void select_folder_Click(object sender, EventArgs e)
         {
-
+            listBoxphotosAfter.Items.Clear();
             if (FolderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
                 eleresi_ut_2.Text = FolderBrowserDialog.SelectedPath;
@@ -79,7 +79,7 @@ namespace Renaming_Prog
 
                     bool allowFile = false;
 
-                    if (ext == ".png" || ext == ".jpeg" || ext == ".jpg")
+                    if (ext == ".png" || ext == ".jpeg" || ext == ".jpg" || ext == ".mp4")
                         allowFile = true;
 
 
@@ -165,10 +165,9 @@ namespace Renaming_Prog
             help.Show();
         }
 
-        private void Design_Changer_Click(object sender, EventArgs e)
+        private void Renamer_Form_Load(object sender, EventArgs e)
         {
-            UI_Changer looks = new UI_Changer();
-            looks.Show();
+
         }
     }
 }

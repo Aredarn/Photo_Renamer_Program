@@ -118,6 +118,329 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Select_Photos.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="Select_Photos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 42</value>
+  </data>
+  <data name="Select_Photos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 63</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Select_Photos.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Select_Photos.Text" xml:space="preserve">
+    <value>Click here to select a folder (From where to copy)</value>
+  </data>
+  <data name="&gt;&gt;Select_Photos.Name" xml:space="preserve">
+    <value>Select_Photos</value>
+  </data>
+  <data name="&gt;&gt;Select_Photos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Select_Photos.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Select_Photos.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="listBoxphotosBefore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 137</value>
+  </data>
+  <data name="listBoxphotosBefore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 264</value>
+  </data>
+  <data name="listBoxphotosBefore.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;listBoxphotosBefore.Name" xml:space="preserve">
+    <value>listBoxphotosBefore</value>
+  </data>
+  <data name="&gt;&gt;listBoxphotosBefore.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBoxphotosBefore.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listBoxphotosBefore.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Copy_Files.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="Copy_Files.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
+  </data>
+  <data name="Copy_Files.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 436</value>
+  </data>
+  <data name="Copy_Files.Size" type="System.Drawing.Size, System.Drawing">
+    <value>455, 46</value>
+  </data>
+  <data name="Copy_Files.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="Copy_Files.Text" xml:space="preserve">
+    <value>Copy Files</value>
+  </data>
+  <data name="&gt;&gt;Copy_Files.Name" xml:space="preserve">
+    <value>Copy_Files</value>
+  </data>
+  <data name="&gt;&gt;Copy_Files.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Copy_Files.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Copy_Files.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="listBoxphotosAfter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 137</value>
+  </data>
+  <data name="listBoxphotosAfter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 264</value>
+  </data>
+  <data name="listBoxphotosAfter.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;listBoxphotosAfter.Name" xml:space="preserve">
+    <value>listBoxphotosAfter</value>
+  </data>
+  <data name="&gt;&gt;listBoxphotosAfter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBoxphotosAfter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listBoxphotosAfter.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="eleresi_ut.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="eleresi_ut.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 111</value>
+  </data>
+  <data name="eleresi_ut.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 20</value>
+  </data>
+  <data name="eleresi_ut.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;eleresi_ut.Name" xml:space="preserve">
+    <value>eleresi_ut</value>
+  </data>
+  <data name="&gt;&gt;eleresi_ut.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eleresi_ut.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;eleresi_ut.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="select_folder.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="select_folder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 42</value>
+  </data>
+  <data name="select_folder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 63</value>
+  </data>
+  <data name="select_folder.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="select_folder.Text" xml:space="preserve">
+    <value>Click here to select a folder (To where to copy)</value>
+  </data>
+  <data name="&gt;&gt;select_folder.Name" xml:space="preserve">
+    <value>select_folder</value>
+  </data>
+  <data name="&gt;&gt;select_folder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;select_folder.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;select_folder.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="eleresi_ut_2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="eleresi_ut_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>253, 111</value>
+  </data>
+  <data name="eleresi_ut_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 20</value>
+  </data>
+  <data name="eleresi_ut_2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;eleresi_ut_2.Name" xml:space="preserve">
+    <value>eleresi_ut_2</value>
+  </data>
+  <data name="&gt;&gt;eleresi_ut_2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eleresi_ut_2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;eleresi_ut_2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Credit.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Credit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 489</value>
+  </data>
+  <data name="Credit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 13</value>
+  </data>
+  <data name="Credit.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="Credit.Text" xml:space="preserve">
+    <value>Developer: Martin Mészáros</value>
+  </data>
+  <data name="&gt;&gt;Credit.Name" xml:space="preserve">
+    <value>Credit</value>
+  </data>
+  <data name="&gt;&gt;Credit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Credit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Credit.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Lenght.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Lenght.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 417</value>
+  </data>
+  <data name="Lenght.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="Lenght.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="Lenght.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Lenght.Name" xml:space="preserve">
+    <value>Lenght</value>
+  </data>
+  <data name="&gt;&gt;Lenght.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Lenght.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Lenght.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Copied_files.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Copied_files.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 417</value>
+  </data>
+  <data name="Copied_files.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="Copied_files.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="Copied_files.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Copied_files.Name" xml:space="preserve">
+    <value>Copied_files</value>
+  </data>
+  <data name="&gt;&gt;Copied_files.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Copied_files.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Copied_files.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Help_button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>380, 12</value>
+  </data>
+  <data name="Help_button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 23</value>
+  </data>
+  <data name="Help_button.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="Help_button.Text" xml:space="preserve">
+    <value>Help how to use</value>
+  </data>
+  <data name="&gt;&gt;Help_button.Name" xml:space="preserve">
+    <value>Help_button</value>
+  </data>
+  <data name="&gt;&gt;Help_button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Help_button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Help_button.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="LiveHead_Label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LiveHead_Label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Wide Latin, 12pt</value>
+  </data>
+  <data name="LiveHead_Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="LiveHead_Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>352, 19</value>
+  </data>
+  <data name="LiveHead_Label.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="LiveHead_Label.Text" xml:space="preserve">
+    <value>Photo Renamer Program</value>
+  </data>
+  <data name="&gt;&gt;LiveHead_Label.Name" xml:space="preserve">
+    <value>LiveHead_Label</value>
+  </data>
+  <data name="&gt;&gt;LiveHead_Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LiveHead_Label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LiveHead_Label.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>484, 506</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAgIAAAAEAIAAoCAEAFgAAACgAAACAAAAAAAEAAAEAIAAAAAAAAAgBAAAAAAAAAAAAAAAAAAAA
@@ -1249,5 +1572,17 @@
         ////////gAAAAAAB/////////////4AAAAAD///////////////AAAAH////////////////4AAP////
         //////////////wf//////////////////8=
 </value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Copy_Rename_Program</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Renamer_Form</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

@@ -76,12 +76,6 @@
     <Compile Include="Forms\Renamer_Form.Designer.cs">
       <DependentUpon>Renamer_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UI_Changer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\UI_Changer.Designer.cs">
-      <DependentUpon>UI_Changer.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Error.resx">
@@ -98,9 +92,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Renamer_Form.resx">
       <DependentUpon>Renamer_Form.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UI_Changer.resx">
-      <DependentUpon>UI_Changer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
