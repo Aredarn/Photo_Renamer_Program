@@ -39,15 +39,15 @@ namespace Renaming_Prog
             // 
             this.Error_label.AutoSize = true;
             this.Error_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Error_label.Location = new System.Drawing.Point(17, 22);
+            this.Error_label.Location = new System.Drawing.Point(25, 9);
             this.Error_label.Name = "Error_label";
-            this.Error_label.Size = new System.Drawing.Size(166, 16);
+            this.Error_label.Size = new System.Drawing.Size(166, 32);
             this.Error_label.TabIndex = 0;
-            this.Error_label.Text = "Error!! No destinition given!";
+            this.Error_label.Text = "Error!! No destinition given \r\n     or not supported file.\r\n";
             // 
             // Confirm
             // 
-            this.Confirm.Location = new System.Drawing.Point(65, 68);
+            this.Confirm.Location = new System.Drawing.Point(66, 98);
             this.Confirm.Name = "Confirm";
             this.Confirm.Size = new System.Drawing.Size(75, 23);
             this.Confirm.TabIndex = 1;
@@ -59,17 +59,17 @@ namespace Renaming_Prog
             // 
             this.Errorlabel2.AutoSize = true;
             this.Errorlabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Errorlabel2.Location = new System.Drawing.Point(26, 49);
+            this.Errorlabel2.Location = new System.Drawing.Point(25, 53);
             this.Errorlabel2.Name = "Errorlabel2";
-            this.Errorlabel2.Size = new System.Drawing.Size(157, 16);
+            this.Errorlabel2.Size = new System.Drawing.Size(157, 32);
             this.Errorlabel2.TabIndex = 2;
-            this.Errorlabel2.Text = "Give a correct destinition!";
+            this.Errorlabel2.Text = "Give a correct destinition \r\n     or try another file!";
             // 
             // Error
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(206, 113);
+            this.ClientSize = new System.Drawing.Size(206, 133);
             this.Controls.Add(this.Errorlabel2);
             this.Controls.Add(this.Confirm);
             this.Controls.Add(this.Error_label);

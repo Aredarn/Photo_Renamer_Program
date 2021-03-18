@@ -79,7 +79,7 @@ namespace Renaming_Prog
 
                     bool allowFile = false;
 
-                    if (ext == ".png" || ext == ".jpeg" || ext == ".jpg" || ext == ".mp4")
+                    if (ext == ".png" || ext == ".jpeg" || ext == ".jpg" || ext == ".mp4" || ext == ".PNG" || ext == ".JPEG" || ext == ".JPG" || ext == ".MP4")
                         allowFile = true;
 
 
@@ -135,7 +135,7 @@ namespace Renaming_Prog
             string ext = Path.GetExtension(srcPath);
 
             bool allowFile = false;
-            if ((ext == ".png" || ext == ".jpeg" || ext == ".jpg") && eleresi_ut.Text != "" && eleresi_ut_2.Text != "")               
+            if ((ext == ".png" || ext == ".jpeg" || ext == ".jpg" || ext == ".mp4" || ext == ".PNG" || ext == ".JPEG" || ext == ".JPG" || ext == ".MP4") && eleresi_ut.Text != "" && eleresi_ut_2.Text != "")               
             allowFile = true;
 
 
