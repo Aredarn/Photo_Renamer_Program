@@ -41,6 +41,7 @@
             this.Copied_files = new System.Windows.Forms.Label();
             this.Help_button = new System.Windows.Forms.Button();
             this.LiveHead_Label = new System.Windows.Forms.Label();
+            this.Version_Label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Select_Photos
@@ -121,11 +122,18 @@
             resources.ApplyResources(this.LiveHead_Label, "LiveHead_Label");
             this.LiveHead_Label.Name = "LiveHead_Label";
             // 
+            // Version_Label
+            // 
+            resources.ApplyResources(this.Version_Label, "Version_Label");
+            this.Version_Label.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Version_Label.Name = "Version_Label";
+            // 
             // Renamer_Form
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Blue;
+            this.Controls.Add(this.Version_Label);
             this.Controls.Add(this.LiveHead_Label);
             this.Controls.Add(this.Help_button);
             this.Controls.Add(this.Copied_files);
@@ -141,7 +149,6 @@
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.MaximizeBox = false;
             this.Name = "Renamer_Form";
-            this.Load += new System.EventHandler(this.Renamer_Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,6 +168,7 @@
         private System.Windows.Forms.Label Copied_files;
         private System.Windows.Forms.Button Help_button;
         private System.Windows.Forms.Label LiveHead_Label;
+        private System.Windows.Forms.Label Version_Label;
     }
 }
 

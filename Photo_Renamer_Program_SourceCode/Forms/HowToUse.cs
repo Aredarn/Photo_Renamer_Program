@@ -16,5 +16,10 @@ namespace Renaming_Prog.Forms
         {
             InitializeComponent();
         }
+
+        private void WebSite_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Aredarn/Photo_Renamer_Program");
+        }
     }
 }

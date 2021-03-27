@@ -1,7 +1,10 @@
 ﻿using Renaming_Prog.Forms;
+using Serilog;
 using System;
 using System.IO;
 using System.Windows.Forms;
+
+
 
 namespace Renaming_Prog
 {
@@ -12,8 +15,9 @@ namespace Renaming_Prog
             InitializeComponent();
         }
         OpenFileDialog ofd = new OpenFileDialog();
-
         FolderBrowserDialog FolderBrowserDialog = new FolderBrowserDialog();
+
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -51,10 +55,16 @@ namespace Renaming_Prog
 
         public void Change_Names_Click(object sender, EventArgs e)
         {
+            string dateTime = DateTime.Now.ToString();
+            dateTime = dateTime.Replace(".", "_");
+            dateTime = dateTime.Replace(":", "_");
+            StreamWriter writeInfo = new StreamWriter($"{dateTime}.txt");
 
             string sourcePath = eleresi_ut.Text;
             string targetPath = eleresi_ut_2.Text;
 
+            writeInfo.WriteLine("Copied from the following folder: " + sourcePath);
+            writeInfo.WriteLine("Copied to the following folder: " + targetPath);
 
             string LastFile = "";
             int LastFileCount = 0;
@@ -64,7 +74,7 @@ namespace Renaming_Prog
 
             try
             {
-                if (!Directory.Exists(targetPath) || eleresi_ut.Text != "No path given")
+                if (!Directory.Exists(targetPath) || eleresi_ut.Text != "Folder path" || eleresi_ut_2.Text != "Folder path")
                 {
                     Directory.CreateDirectory(targetPath);
                     loading.Show();
@@ -79,6 +89,7 @@ namespace Renaming_Prog
 
                     bool allowFile = false;
 
+                    //This line examines the correct file's format, if it's not correct it won't copy it.
                     if (ext == ".png" || ext == ".jpeg" || ext == ".jpg" || ext == ".mp4" || ext == ".PNG" || ext == ".JPEG" || ext == ".JPG" || ext == ".MP4")
                         allowFile = true;
 
@@ -89,11 +100,14 @@ namespace Renaming_Prog
                         CreatedON = CreatedON.Replace(".", "_");
                         CreatedON = CreatedON.Replace(":", "_");
 
+                        //If the correct copied file is created on the same date as the previous file
+                        //these lines add 2 underlines and how many times the file was found (the same)
+                        //after the filename to prevent duplication and overwriting the file
+
                         if (CreatedON == LastFile)
                         {
-
                             LastFileCount++;
-                            CreatedON = CreatedON + LastFile;
+                            CreatedON = CreatedON + "_" + LastFileCount;
                         }
                         else
                         {
@@ -124,8 +138,7 @@ namespace Renaming_Prog
             }
         }
 
-
-        //This method allows the user to copy only one photo if clicked on
+        //This method allows the user to copy only one photo by clicking on it.
         private void listBoxphotosBefore_MouseDoubleClick_1(object sender, MouseEventArgs e)
         {
             string selectedFile = listBoxphotosBefore.GetItemText(listBoxphotosBefore.SelectedItem);                   
@@ -163,11 +176,6 @@ namespace Renaming_Prog
         {
             HowToUse help = new HowToUse();
             help.Show();
-        }
-
-        private void Renamer_Form_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
