@@ -56,17 +56,9 @@ namespace Renaming_Prog
 
         //This method does the whole renaming process
         public void Change_Names_Click(object sender, EventArgs e)
-        {
-            string dateTime = DateTime.Now.ToString();
-            dateTime = dateTime.Replace(".", "_");
-            dateTime = dateTime.Replace(":", "_");
-            StreamWriter writeInfo = new StreamWriter($"{dateTime}.txt");
-
+        { 
             string sourcePath = eleresi_ut.Text;
             string targetPath = eleresi_ut_2.Text;
-
-            writeInfo.WriteLine("Copied from the following folder: " + sourcePath);
-            writeInfo.WriteLine("Copied to the following folder: " + targetPath);
 
             string LastFile = "";
             int LastFileCount = 0;
@@ -133,9 +125,6 @@ namespace Renaming_Prog
                 loading.Close();
                 Info_Form info_Form = new Info_Form();
                 info_Form.Show();
-                writeInfo.WriteLine($"{Copied_files.Text}");
-
-                writeInfo.Close();
             }
             catch
             {
