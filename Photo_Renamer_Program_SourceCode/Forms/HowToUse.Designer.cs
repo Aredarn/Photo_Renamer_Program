@@ -123,18 +123,19 @@ namespace Renaming_Prog.Forms
             this.inf_label_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.inf_label_4.Location = new System.Drawing.Point(4, 284);
             this.inf_label_4.Name = "inf_label_4";
-            this.inf_label_4.Size = new System.Drawing.Size(357, 48);
+            this.inf_label_4.Size = new System.Drawing.Size(358, 48);
             this.inf_label_4.TabIndex = 7;
             this.inf_label_4.Text = "The program may freeze and not response  if you copy too \r\nmuch files but in the " +
-    "background the it is working.\r\nWait until it finishes.\r\n";
+    "background your files are beign copied\r\nWait until it finishes.\r\n";
             // 
             // WebSite
             // 
             this.WebSite.ActiveLinkColor = System.Drawing.Color.Lime;
             this.WebSite.AutoSize = true;
             this.WebSite.Font = new System.Drawing.Font("Wide Latin", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WebSite.ForeColor = System.Drawing.Color.DarkGray;
             this.WebSite.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
-            this.WebSite.LinkColor = System.Drawing.Color.DimGray;
+            this.WebSite.LinkColor = System.Drawing.Color.DarkGray;
             this.WebSite.Location = new System.Drawing.Point(73, 353);
             this.WebSite.Name = "WebSite";
             this.WebSite.Size = new System.Drawing.Size(285, 33);
@@ -142,6 +143,8 @@ namespace Renaming_Prog.Forms
             this.WebSite.TabStop = true;
             this.WebSite.Text = "Github page";
             this.WebSite.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.WebSite_LinkClicked);
+            this.WebSite.MouseLeave += new System.EventHandler(this.WebSite_MouseLeave);
+            this.WebSite.MouseHover += new System.EventHandler(this.WebSite_MouseHover);
             // 
             // GitHub_PB
             // 
@@ -171,6 +174,7 @@ namespace Renaming_Prog.Forms
             this.Controls.Add(this.Info_Label);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "HowToUse";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HowToUse";
             ((System.ComponentModel.ISupportInitialize)(this.GitHub_PB)).EndInit();
             this.ResumeLayout(false);
