@@ -1,7 +1,6 @@
 ﻿using Renaming_Prog.Forms;
 using Serilog;
 using System;
-using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
@@ -54,7 +53,6 @@ namespace Renaming_Prog
             }
         }
 
-        //This method does the whole renaming process
         public void Change_Names_Click(object sender, EventArgs e)
         {
             string dateTime = DateTime.Now.ToString();
@@ -76,7 +74,7 @@ namespace Renaming_Prog
 
             try
             {
-                if (!Directory.Exists(targetPath))
+                if (!Directory.Exists(targetPath) || eleresi_ut.Text != "Folder path" || eleresi_ut_2.Text != "Folder path")
                 {
                     Directory.CreateDirectory(targetPath);
                     loading.Show();
@@ -128,14 +126,10 @@ namespace Renaming_Prog
                         listBoxphotosAfter.Items.Add(CreatedON + ext);
                         File.Copy(srcPath, pathMove, true);
                     }
-                    
                 }
                 loading.Close();
                 Info_Form info_Form = new Info_Form();
                 info_Form.Show();
-                writeInfo.WriteLine($"{Copied_files.Text}");
-
-                writeInfo.Close();
             }
             catch
             {
@@ -183,35 +177,5 @@ namespace Renaming_Prog
             HowToUse help = new HowToUse();
             help.Show();
         }
-
-
-        // The following lines changes the action buttons color if the user is above it with the mosue or not.
-        private void Select_Photos_MouseHover(object sender, EventArgs e)
-        {
-            Select_Photos.BackColor = Color.Aquamarine;
-        }
-        private void Select_Photos_MouseLeave(object sender, EventArgs e)
-        {
-            Select_Photos.BackColor = Color.Lime;
-        }
-        private void select_folder_MouseHover(object sender, EventArgs e)
-        {
-            select_folder.BackColor = Color.Aquamarine;
-        }
-        private void select_folder_MouseLeave(object sender, EventArgs e)
-        {
-            select_folder.BackColor = Color.Lime;
-        }
-        private void Copy_Files_MouseHover(object sender, EventArgs e)
-        {
-            Copy_Files.BackColor = Color.Aquamarine;
-        }
-        private void Copy_Files_MouseLeave(object sender, EventArgs e)
-        {
-            Copy_Files.BackColor = Color.Lime;
-        }
-
-
-
     }
 }

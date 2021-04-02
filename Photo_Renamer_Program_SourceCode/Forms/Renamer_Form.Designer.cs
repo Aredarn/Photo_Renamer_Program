@@ -42,8 +42,6 @@
             this.Help_button = new System.Windows.Forms.Button();
             this.LiveHead_Label = new System.Windows.Forms.Label();
             this.Version_Label = new System.Windows.Forms.Label();
-            this.Src_LBL = new System.Windows.Forms.Label();
-            this.Cpy_LBL = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Select_Photos
@@ -54,8 +52,6 @@
             this.Select_Photos.Name = "Select_Photos";
             this.Select_Photos.UseVisualStyleBackColor = false;
             this.Select_Photos.Click += new System.EventHandler(this.button1_Click);
-            this.Select_Photos.MouseLeave += new System.EventHandler(this.Select_Photos_MouseLeave);
-            this.Select_Photos.MouseHover += new System.EventHandler(this.Select_Photos_MouseHover);
             // 
             // listBoxphotosBefore
             // 
@@ -72,8 +68,6 @@
             this.Copy_Files.Name = "Copy_Files";
             this.Copy_Files.UseVisualStyleBackColor = false;
             this.Copy_Files.Click += new System.EventHandler(this.Change_Names_Click);
-            this.Copy_Files.MouseLeave += new System.EventHandler(this.Copy_Files_MouseLeave);
-            this.Copy_Files.MouseHover += new System.EventHandler(this.Copy_Files_MouseHover);
             // 
             // listBoxphotosAfter
             // 
@@ -94,8 +88,6 @@
             this.select_folder.Name = "select_folder";
             this.select_folder.UseVisualStyleBackColor = false;
             this.select_folder.Click += new System.EventHandler(this.select_folder_Click);
-            this.select_folder.MouseLeave += new System.EventHandler(this.select_folder_MouseLeave);
-            this.select_folder.MouseHover += new System.EventHandler(this.select_folder_MouseHover);
             // 
             // eleresi_ut_2
             // 
@@ -136,27 +128,11 @@
             this.Version_Label.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Version_Label.Name = "Version_Label";
             // 
-            // Src_LBL
-            // 
-            resources.ApplyResources(this.Src_LBL, "Src_LBL");
-            this.Src_LBL.BackColor = System.Drawing.Color.Lime;
-            this.Src_LBL.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Src_LBL.Name = "Src_LBL";
-            // 
-            // Cpy_LBL
-            // 
-            resources.ApplyResources(this.Cpy_LBL, "Cpy_LBL");
-            this.Cpy_LBL.BackColor = System.Drawing.Color.Lime;
-            this.Cpy_LBL.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Cpy_LBL.Name = "Cpy_LBL";
-            // 
             // Renamer_Form
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Blue;
-            this.Controls.Add(this.Cpy_LBL);
-            this.Controls.Add(this.Src_LBL);
             this.Controls.Add(this.Version_Label);
             this.Controls.Add(this.LiveHead_Label);
             this.Controls.Add(this.Help_button);
@@ -193,8 +169,6 @@
         private System.Windows.Forms.Button Help_button;
         private System.Windows.Forms.Label LiveHead_Label;
         private System.Windows.Forms.Label Version_Label;
-        private System.Windows.Forms.Label Src_LBL;
-        private System.Windows.Forms.Label Cpy_LBL;
     }
 }
 

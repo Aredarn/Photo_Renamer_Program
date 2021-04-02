@@ -21,15 +21,5 @@ namespace Renaming_Prog.Forms
         {
             System.Diagnostics.Process.Start("https://github.com/Aredarn/Photo_Renamer_Program");
         }
-
-        private void WebSite_MouseHover(object sender, EventArgs e)
-        {
-            WebSite.LinkColor = Color.Black;
-        }
-
-        private void WebSite_MouseLeave(object sender, EventArgs e)
-        {
-            WebSite.LinkColor = Color.DarkGray;
-        }
     }
 }
