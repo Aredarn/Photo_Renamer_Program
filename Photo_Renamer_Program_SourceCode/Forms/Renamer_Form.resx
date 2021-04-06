@@ -452,7 +452,7 @@
     <value>13</value>
   </data>
   <data name="Version_Label.Text" xml:space="preserve">
-    <value>Version: v5.3</value>
+    <value>Version: v5.4</value>
   </data>
   <data name="&gt;&gt;Version_Label.Name" xml:space="preserve">
     <value>Version_Label</value>
@@ -474,6 +474,9 @@
   </data>
   <data name="Src_LBL.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 143</value>
+  </data>
+  <data name="Src_LBL.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="Src_LBL.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>33, 0, 32, 0</value>
@@ -1683,7 +1686,7 @@
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Photo_Renamer_Program</value>
+    <value>Photo_Copier_Renamer_Program</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Renamer_Form</value>

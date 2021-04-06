@@ -40,6 +40,9 @@ namespace Renaming_Prog.Forms
             this.inf_label_4 = new System.Windows.Forms.Label();
             this.WebSite = new System.Windows.Forms.LinkLabel();
             this.GitHub_PB = new System.Windows.Forms.PictureBox();
+            this.MultiCopy_Label = new System.Windows.Forms.Label();
+            this.Singel_File_Label = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.GitHub_PB)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +50,7 @@ namespace Renaming_Prog.Forms
             // 
             this.Info_Label.AutoSize = true;
             this.Info_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Info_Label.Location = new System.Drawing.Point(4, 93);
+            this.Info_Label.Location = new System.Drawing.Point(4, 121);
             this.Info_Label.Name = "Info_Label";
             this.Info_Label.Size = new System.Drawing.Size(353, 48);
             this.Info_Label.TabIndex = 0;
@@ -58,8 +61,8 @@ namespace Renaming_Prog.Forms
             // PRG_Label
             // 
             this.PRG_Label.AutoSize = true;
-            this.PRG_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.PRG_Label.Location = new System.Drawing.Point(3, 73);
+            this.PRG_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PRG_Label.Location = new System.Drawing.Point(3, 75);
             this.PRG_Label.Name = "PRG_Label";
             this.PRG_Label.Size = new System.Drawing.Size(219, 20);
             this.PRG_Label.TabIndex = 1;
@@ -68,7 +71,7 @@ namespace Renaming_Prog.Forms
             // What_For_Label
             // 
             this.What_For_Label.AutoSize = true;
-            this.What_For_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.What_For_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.What_For_Label.Location = new System.Drawing.Point(3, 9);
             this.What_For_Label.Name = "What_For_Label";
             this.What_For_Label.Size = new System.Drawing.Size(240, 20);
@@ -89,8 +92,8 @@ namespace Renaming_Prog.Forms
             // Files_Lbl
             // 
             this.Files_Lbl.AutoSize = true;
-            this.Files_Lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Files_Lbl.Location = new System.Drawing.Point(3, 155);
+            this.Files_Lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Files_Lbl.Location = new System.Drawing.Point(3, 238);
             this.Files_Lbl.Name = "Files_Lbl";
             this.Files_Lbl.Size = new System.Drawing.Size(280, 20);
             this.Files_Lbl.TabIndex = 4;
@@ -100,7 +103,7 @@ namespace Renaming_Prog.Forms
             // 
             this.Info_Label_3.AutoSize = true;
             this.Info_Label_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Info_Label_3.Location = new System.Drawing.Point(4, 175);
+            this.Info_Label_3.Location = new System.Drawing.Point(4, 258);
             this.Info_Label_3.Name = "Info_Label_3";
             this.Info_Label_3.Size = new System.Drawing.Size(308, 80);
             this.Info_Label_3.TabIndex = 5;
@@ -110,8 +113,8 @@ namespace Renaming_Prog.Forms
             // Known_Bugs
             // 
             this.Known_Bugs.AutoSize = true;
-            this.Known_Bugs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Known_Bugs.Location = new System.Drawing.Point(3, 264);
+            this.Known_Bugs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Known_Bugs.Location = new System.Drawing.Point(3, 347);
             this.Known_Bugs.Name = "Known_Bugs";
             this.Known_Bugs.Size = new System.Drawing.Size(116, 20);
             this.Known_Bugs.TabIndex = 6;
@@ -121,12 +124,13 @@ namespace Renaming_Prog.Forms
             // 
             this.inf_label_4.AutoSize = true;
             this.inf_label_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.inf_label_4.Location = new System.Drawing.Point(4, 284);
+            this.inf_label_4.Location = new System.Drawing.Point(4, 367);
             this.inf_label_4.Name = "inf_label_4";
-            this.inf_label_4.Size = new System.Drawing.Size(358, 48);
+            this.inf_label_4.Size = new System.Drawing.Size(361, 48);
             this.inf_label_4.TabIndex = 7;
             this.inf_label_4.Text = "The program may freeze and not response  if you copy too \r\nmuch files but in the " +
-    "background your files are beign copied\r\nWait until it finishes.\r\n";
+    "background your files are beign copied.\r\nPlesae be patient and wait until it fin" +
+    "ishes.\r\n";
             // 
             // WebSite
             // 
@@ -136,7 +140,7 @@ namespace Renaming_Prog.Forms
             this.WebSite.ForeColor = System.Drawing.Color.DarkGray;
             this.WebSite.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
             this.WebSite.LinkColor = System.Drawing.Color.DarkGray;
-            this.WebSite.Location = new System.Drawing.Point(73, 353);
+            this.WebSite.Location = new System.Drawing.Point(73, 436);
             this.WebSite.Name = "WebSite";
             this.WebSite.Size = new System.Drawing.Size(285, 33);
             this.WebSite.TabIndex = 8;
@@ -149,19 +153,53 @@ namespace Renaming_Prog.Forms
             // GitHub_PB
             // 
             this.GitHub_PB.Image = global::Renaming_Prog.Properties.Resources.GutHib;
-            this.GitHub_PB.Location = new System.Drawing.Point(7, 339);
+            this.GitHub_PB.Location = new System.Drawing.Point(7, 422);
             this.GitHub_PB.Name = "GitHub_PB";
             this.GitHub_PB.Size = new System.Drawing.Size(60, 60);
-            this.GitHub_PB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.GitHub_PB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.GitHub_PB.TabIndex = 9;
             this.GitHub_PB.TabStop = false;
+            // 
+            // MultiCopy_Label
+            // 
+            this.MultiCopy_Label.AutoSize = true;
+            this.MultiCopy_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.MultiCopy_Label.Location = new System.Drawing.Point(4, 105);
+            this.MultiCopy_Label.Name = "MultiCopy_Label";
+            this.MultiCopy_Label.Size = new System.Drawing.Size(358, 16);
+            this.MultiCopy_Label.TabIndex = 10;
+            this.MultiCopy_Label.Text = "How to copy and rename a whole folder\'s content?:";
+            // 
+            // Singel_File_Label
+            // 
+            this.Singel_File_Label.AutoSize = true;
+            this.Singel_File_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Singel_File_Label.Location = new System.Drawing.Point(4, 179);
+            this.Singel_File_Label.Name = "Singel_File_Label";
+            this.Singel_File_Label.Size = new System.Drawing.Size(246, 16);
+            this.Singel_File_Label.TabIndex = 11;
+            this.Singel_File_Label.Text = "How to copy and rename one file?:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(4, 195);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(381, 32);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "1. Do the first two steps from the first HOW-TO\r\n2. Double click on the file\'s na" +
+    "me and your photo will be copied.";
             // 
             // HowToUse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Blue;
-            this.ClientSize = new System.Drawing.Size(387, 411);
+            this.ClientSize = new System.Drawing.Size(387, 501);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Singel_File_Label);
+            this.Controls.Add(this.MultiCopy_Label);
             this.Controls.Add(this.GitHub_PB);
             this.Controls.Add(this.WebSite);
             this.Controls.Add(this.inf_label_4);
@@ -194,5 +232,8 @@ namespace Renaming_Prog.Forms
         private System.Windows.Forms.Label inf_label_4;
         private System.Windows.Forms.LinkLabel WebSite;
         private System.Windows.Forms.PictureBox GitHub_PB;
+        private System.Windows.Forms.Label MultiCopy_Label;
+        private System.Windows.Forms.Label Singel_File_Label;
+        private System.Windows.Forms.Label label2;
     }
 }

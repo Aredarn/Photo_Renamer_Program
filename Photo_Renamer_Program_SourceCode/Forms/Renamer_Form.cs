@@ -5,8 +5,6 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
-
-
 namespace Renaming_Prog
 {
     public partial class Renamer_Form : Form
@@ -15,10 +13,10 @@ namespace Renaming_Prog
         {
             InitializeComponent();
         }
+
+        //declarates an OpenFile Dialog and a FolderBrowserDialog for the program.
         OpenFileDialog ofd = new OpenFileDialog();
         FolderBrowserDialog FolderBrowserDialog = new FolderBrowserDialog();
-
-        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -54,15 +52,14 @@ namespace Renaming_Prog
             }
         }
 
-        //This method does the whole renaming process
-        public void Change_Names_Click(object sender, EventArgs e)
+        //This method does the whole renaming and copying process
+        private void Change_Names_Click(object sender, EventArgs e)
         { 
             string sourcePath = eleresi_ut.Text;
             string targetPath = eleresi_ut_2.Text;
-
             string LastFile = "";
+
             int LastFileCount = 0;
-            long size = 0;
             int CopiedFiles = 0;
             Loading_TXT loading = new Loading_TXT();
 
@@ -75,7 +72,7 @@ namespace Renaming_Prog
                 }
                 foreach (var srcPath in Directory.GetFiles(sourcePath))
                 {
-                    size = srcPath.Length;
+                    //Names the variable to the creation time of the correct file.
                     string CreatedON = "" + File.GetLastWriteTime(srcPath);
 
                     //Gets the file's format (like png or jpeg)
@@ -113,14 +110,15 @@ namespace Renaming_Prog
                         //Adds the targetpath, the date of creation and the file's format
                         string pathMove = targetPath + @"\" + (CreatedON) + ext;
 
-                        //Copy the file from sourcepath and place into mentioned target path, 
-                        //Overwrite the file if same file is exist in target path               
+                        //Add +1 to the copied files
+                        //Writes out how many files got copied
+                        //adds the copied files name to the targetpath listbox
+                        //Copy the file from sourcepath and place into mentioned target path,
                         CopiedFiles++;
                         Copied_files.Text = $"Files copied: {CopiedFiles}";
                         listBoxphotosAfter.Items.Add(CreatedON + ext);
                         File.Copy(srcPath, pathMove, true);
-                    }
-                    
+                    }                 
                 }
                 loading.Close();
                 Info_Form info_Form = new Info_Form();
@@ -128,6 +126,7 @@ namespace Renaming_Prog
             }
             catch
             {
+                //If the copy can not be done it will open the ERROR Form
                 Error error = new Error();
                 error.Show();
             }
@@ -142,7 +141,9 @@ namespace Renaming_Prog
             //Gets the file's format (like png or jpeg)
             string ext = Path.GetExtension(srcPath);
 
+            //Determines the file types which are allowed.
             bool allowFile = false;
+
             if ((ext == ".png" || ext == ".jpeg" || ext == ".jpg" || ext == ".mp4" || ext == ".PNG" || ext == ".JPEG" || ext == ".JPG" || ext == ".MP4") && eleresi_ut.Text != "" && eleresi_ut_2.Text != "")               
             allowFile = true;
 
@@ -167,6 +168,7 @@ namespace Renaming_Prog
             }
         }
 
+        //Open the HELP Form
         private void Help_button_Click(object sender, EventArgs e)
         {
             HowToUse help = new HowToUse();
@@ -175,6 +177,8 @@ namespace Renaming_Prog
 
 
         // The following lines changes the action buttons color if the user is above it with the mosue or not.
+        //***********************************************************************//
+        //***********************************************************************//
         private void Select_Photos_MouseHover(object sender, EventArgs e)
         {
             Select_Photos.BackColor = Color.Aquamarine;
@@ -200,7 +204,7 @@ namespace Renaming_Prog
             Copy_Files.BackColor = Color.Lime;
         }
 
-
-
+        //************************************************************************//
+        //************************************************************************//
     }
 }
