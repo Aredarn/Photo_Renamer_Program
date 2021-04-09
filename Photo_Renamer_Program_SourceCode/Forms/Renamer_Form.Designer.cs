@@ -53,7 +53,7 @@
             this.Select_Photos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Select_Photos.Name = "Select_Photos";
             this.Select_Photos.UseVisualStyleBackColor = false;
-            this.Select_Photos.Click += new System.EventHandler(this.button1_Click);
+            this.Select_Photos.Click += new System.EventHandler(this.Select_Photos_Click);
             this.Select_Photos.MouseLeave += new System.EventHandler(this.Select_Photos_MouseLeave);
             this.Select_Photos.MouseHover += new System.EventHandler(this.Select_Photos_MouseHover);
             // 

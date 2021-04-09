@@ -18,7 +18,11 @@ namespace Renaming_Prog
         OpenFileDialog ofd = new OpenFileDialog();
         FolderBrowserDialog FolderBrowserDialog = new FolderBrowserDialog();
 
-        private void button1_Click(object sender, EventArgs e)
+
+        //These lines are responsible for the 2 main buttons in the program.
+        //These open a File explorer to select a folder
+        //***********************************************************************//
+        private void Select_Photos_Click(object sender, EventArgs e)
         {
             listBoxphotosBefore.Items.Clear();
             string str;
@@ -40,7 +44,6 @@ namespace Renaming_Prog
                 Lenght.Text = "" + db;
             }
         }
-
         private void select_folder_Click(object sender, EventArgs e)
         {
             listBoxphotosAfter.Items.Clear();
@@ -51,8 +54,15 @@ namespace Renaming_Prog
                 FileInfo[] Files = d.GetFiles("*"); //This line detects the files
             }
         }
+        //***********************************************************************//
+        //***********************************************************************//
+
+
 
         //This method does the whole renaming and copying process
+        //First it gets the two paths
+        //Counts the files in the first folder and after copy process it counts the files which has been copied
+        //
         private void Change_Names_Click(object sender, EventArgs e)
         { 
             string sourcePath = eleresi_ut.Text;
@@ -203,7 +213,6 @@ namespace Renaming_Prog
         {
             Copy_Files.BackColor = Color.Lime;
         }
-
         //************************************************************************//
         //************************************************************************//
     }
