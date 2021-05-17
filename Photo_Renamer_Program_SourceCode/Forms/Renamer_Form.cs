@@ -17,7 +17,7 @@ namespace Renaming_Prog
         //declarates an OpenFile Dialog and a FolderBrowserDialog for the program.
         OpenFileDialog ofd = new OpenFileDialog();
         FolderBrowserDialog FolderBrowserDialog = new FolderBrowserDialog();
-
+        public int CopiedFiles = 0;
 
         //These lines are responsible for the 2 main buttons in the program.
         //These open a File explorer to select a folder
@@ -70,7 +70,7 @@ namespace Renaming_Prog
             string LastFile = "";
 
             int LastFileCount = 0;
-            int CopiedFiles = 0;
+            
             Loading_TXT loading = new Loading_TXT();
 
             try
@@ -170,6 +170,8 @@ namespace Renaming_Prog
                 File.Copy(srcPath, pathMove, true);
 
                 listBoxphotosAfter.Items.Add(CreatedON + ext);
+                CopiedFiles++;
+                Copied_files.Text = $"Files copied: {CopiedFiles}";
             }
             else
             {
