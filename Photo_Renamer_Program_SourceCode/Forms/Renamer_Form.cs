@@ -1,9 +1,10 @@
 ﻿using Renaming_Prog.Forms;
-using Serilog;
 using System;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using System.Threading;
+using System.Diagnostics;
 
 namespace Renaming_Prog
 {
@@ -17,7 +18,11 @@ namespace Renaming_Prog
         //declarates an OpenFile Dialog and a FolderBrowserDialog for the program.
         OpenFileDialog ofd = new OpenFileDialog();
         FolderBrowserDialog FolderBrowserDialog = new FolderBrowserDialog();
+        
         public int CopiedFiles = 0;
+        string CorrectTime = DateTime.Now.ToString();
+
+        
 
         //These lines are responsible for the 2 main buttons in the program.
         //These open a File explorer to select a folder
@@ -63,15 +68,27 @@ namespace Renaming_Prog
         //First it gets the two paths
         //Counts the files in the first folder and after copy process it counts the files which has been copied
         //
+
         private void Change_Names_Click(object sender, EventArgs e)
         { 
             string sourcePath = eleresi_ut.Text;
             string targetPath = eleresi_ut_2.Text;
-            string LastFile = "";
-
+            string LastFile = "";            
             int LastFileCount = 0;
             
             Loading_TXT loading = new Loading_TXT();
+
+            //Edits the CorrectTime string so it can be a TXT file name for a StreamWriter.
+            CorrectTime = CorrectTime.Replace(".", "_");
+            CorrectTime = CorrectTime.Replace(":", "_");
+            StreamWriter InfoWriter = new StreamWriter($"{targetPath}\\{CorrectTime}.txt");
+
+            //Writes the Path of the folder where the files were and where they are going to be.
+            InfoWriter.WriteLine("Sourcepath: " + sourcePath);
+            InfoWriter.WriteLine("Targetpath: " + targetPath);
+
+            Stopwatch timeElapsed = new Stopwatch();
+            timeElapsed.Start();
 
             try
             {
@@ -128,18 +145,37 @@ namespace Renaming_Prog
                         Copied_files.Text = $"Files copied: {CopiedFiles}";
                         listBoxphotosAfter.Items.Add(CreatedON + ext);
                         File.Copy(srcPath, pathMove, true);
-                    }                 
-                }
+                      
+                       
+                        //Write's the name of the correctly copied file into the TXT file
+                        InfoWriter.WriteLine("Copied file after rename: " + CreatedON + ext + "\n");
+
+                    }
+
+                }                 
+                
                 loading.Close();
                 Info_Form info_Form = new Info_Form();
                 info_Form.Show();
+                
+                //Stoppes the stop watch
+                
+                timeElapsed.Stop();
+                TimeSpan ts = timeElapsed.Elapsed;
+                string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds / 10);
+                //Writes out the elapsed time and the files the number of files that the program wrote, to the TXT file
+                InfoWriter.WriteLine("\nElapsed time: " + elapsedTime);
+                InfoWriter.WriteLine("The program copied: " + CopiedFiles + " files.");
+
             }
             catch
             {
                 //If the copy can not be done it will open the ERROR Form
                 Error error = new Error();
                 error.Show();
+                InfoWriter.WriteLine("The prgram could not copy.");
             }
+            InfoWriter.Close();
         }
 
         //This method allows the user to copy only one photo by clicking on it.
@@ -188,7 +224,7 @@ namespace Renaming_Prog
         }
 
 
-        // The following lines changes the action buttons color if the user is above it with the mosue or not.
+        // The following lines changes the action buttons' color if the user is above it with the mouse or not.
         //***********************************************************************//
         //***********************************************************************//
         private void Select_Photos_MouseHover(object sender, EventArgs e)
