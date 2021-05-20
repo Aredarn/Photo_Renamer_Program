@@ -173,7 +173,7 @@ namespace Renaming_Prog
                 //If the copy can not be done it will open the ERROR Form
                 Error error = new Error();
                 error.Show();
-                InfoWriter.WriteLine("The prgram could not copy.");
+                InfoWriter.WriteLine("The program could not copy.");
             }
             InfoWriter.Close();
         }

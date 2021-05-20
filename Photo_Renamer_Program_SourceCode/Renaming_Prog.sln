@@ -8,6 +8,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{97F4E92F-AA69-4B20-A291-AB8662321CAC}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		Forms\Renamer_Form.cs = Forms\Renamer_Form.cs
+		Forms\Renamer_Form.Designer.cs = Forms\Renamer_Form.Designer.cs
+		Forms\Renamer_Form.resx = Forms\Renamer_Form.resx
 	EndProjectSection
 EndProject
 Global

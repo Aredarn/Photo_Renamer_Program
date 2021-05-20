@@ -122,14 +122,14 @@
     <value>Microsoft Sans Serif, 11.25pt, style=Italic</value>
   </data>
   <data name="Select_Photos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 42</value>
+    <value>21, 52</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Select_Photos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 5, 10, 5</value>
+    <value>13, 6, 13, 6</value>
   </data>
   <data name="Select_Photos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>216, 63</value>
+    <value>288, 78</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Select_Photos.TabIndex" type="System.Int32, mscorlib">
@@ -150,11 +150,17 @@
   <data name="&gt;&gt;Select_Photos.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
+  <data name="listBoxphotosBefore.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
   <data name="listBoxphotosBefore.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 171</value>
+    <value>20, 210</value>
+  </data>
+  <data name="listBoxphotosBefore.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="listBoxphotosBefore.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 264</value>
+    <value>288, 324</value>
   </data>
   <data name="listBoxphotosBefore.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -178,10 +184,13 @@
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
   </data>
   <data name="Copy_Files.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 457</value>
+    <value>21, 562</value>
+  </data>
+  <data name="Copy_Files.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="Copy_Files.Size" type="System.Drawing.Size, System.Drawing">
-    <value>455, 46</value>
+    <value>607, 57</value>
   </data>
   <data name="Copy_Files.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -201,11 +210,17 @@
   <data name="&gt;&gt;Copy_Files.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
+  <data name="listBoxphotosAfter.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
   <data name="listBoxphotosAfter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>253, 171</value>
+    <value>337, 210</value>
+  </data>
+  <data name="listBoxphotosAfter.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="listBoxphotosAfter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 264</value>
+    <value>289, 324</value>
   </data>
   <data name="listBoxphotosAfter.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -226,10 +241,13 @@
     <value>False</value>
   </data>
   <data name="eleresi_ut.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 111</value>
+    <value>21, 137</value>
+  </data>
+  <data name="eleresi_ut.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="eleresi_ut.Size" type="System.Drawing.Size, System.Drawing">
-    <value>216, 20</value>
+    <value>287, 22</value>
   </data>
   <data name="eleresi_ut.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -254,10 +272,13 @@
     <value>Microsoft Sans Serif, 11.25pt, style=Italic</value>
   </data>
   <data name="select_folder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>253, 42</value>
+    <value>337, 52</value>
+  </data>
+  <data name="select_folder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="select_folder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 63</value>
+    <value>291, 78</value>
   </data>
   <data name="select_folder.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -281,10 +302,13 @@
     <value>False</value>
   </data>
   <data name="eleresi_ut_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>253, 111</value>
+    <value>337, 137</value>
+  </data>
+  <data name="eleresi_ut_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="eleresi_ut_2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 20</value>
+    <value>289, 22</value>
   </data>
   <data name="eleresi_ut_2.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -305,10 +329,13 @@
     <value>True</value>
   </data>
   <data name="Credit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 510</value>
+    <value>449, 628</value>
+  </data>
+  <data name="Credit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="Credit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 13</value>
+    <value>185, 17</value>
   </data>
   <data name="Credit.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -332,10 +359,13 @@
     <value>True</value>
   </data>
   <data name="Lenght.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 438</value>
+    <value>23, 539</value>
+  </data>
+  <data name="Lenght.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="Lenght.Size" type="System.Drawing.Size, System.Drawing">
-    <value>13, 13</value>
+    <value>16, 17</value>
   </data>
   <data name="Lenght.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -359,10 +389,13 @@
     <value>True</value>
   </data>
   <data name="Copied_files.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 438</value>
+    <value>513, 539</value>
+  </data>
+  <data name="Copied_files.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="Copied_files.Size" type="System.Drawing.Size, System.Drawing">
-    <value>13, 13</value>
+    <value>16, 17</value>
   </data>
   <data name="Copied_files.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -383,10 +416,13 @@
     <value>5</value>
   </data>
   <data name="Help_button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>380, 12</value>
+    <value>507, 15</value>
+  </data>
+  <data name="Help_button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="Help_button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 23</value>
+    <value>128, 28</value>
   </data>
   <data name="Help_button.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -413,10 +449,13 @@
     <value>Wide Latin, 12pt</value>
   </data>
   <data name="LiveHead_Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+    <value>16, 15</value>
+  </data>
+  <data name="LiveHead_Label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="LiveHead_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>352, 19</value>
+    <value>441, 24</value>
   </data>
   <data name="LiveHead_Label.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -443,16 +482,19 @@
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
   <data name="Version_Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 510</value>
+    <value>4, 628</value>
+  </data>
+  <data name="Version_Label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="Version_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 13</value>
+    <value>104, 17</value>
   </data>
   <data name="Version_Label.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
   <data name="Version_Label.Text" xml:space="preserve">
-    <value>Version: v5.4</value>
+    <value>Version: v6.1</value>
   </data>
   <data name="&gt;&gt;Version_Label.Name" xml:space="preserve">
     <value>Version_Label</value>
@@ -473,16 +515,16 @@
     <value>Microsoft Sans Serif, 18pt, style=Bold, Underline</value>
   </data>
   <data name="Src_LBL.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 143</value>
+    <value>20, 176</value>
   </data>
   <data name="Src_LBL.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="Src_LBL.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>33, 0, 32, 0</value>
+    <value>44, 0, 43, 0</value>
   </data>
   <data name="Src_LBL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 29</value>
+    <value>270, 36</value>
   </data>
   <data name="Src_LBL.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -512,13 +554,16 @@
     <value>NoControl</value>
   </data>
   <data name="Cpy_LBL.Location" type="System.Drawing.Point, System.Drawing">
-    <value>253, 143</value>
+    <value>337, 176</value>
+  </data>
+  <data name="Cpy_LBL.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="Cpy_LBL.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>32, 0, 32, 0</value>
+    <value>43, 0, 43, 0</value>
   </data>
   <data name="Cpy_LBL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 29</value>
+    <value>269, 36</value>
   </data>
   <data name="Cpy_LBL.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -545,10 +590,10 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>484, 526</value>
+    <value>645, 647</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1681,6 +1726,9 @@
         ////////gAAAAAAB/////////////4AAAAAD///////////////AAAAH////////////////4AAP////
         //////////////wf//////////////////8=
 </value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
