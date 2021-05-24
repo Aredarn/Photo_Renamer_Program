@@ -171,6 +171,7 @@
             this.Controls.Add(this.listBoxphotosBefore);
             this.Controls.Add(this.Select_Photos);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Renamer_Form";
             this.ResumeLayout(false);

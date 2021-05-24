@@ -76,7 +76,9 @@ namespace Renaming_Prog
             this.Controls.Add(this.Errorlabel2);
             this.Controls.Add(this.Confirm);
             this.Controls.Add(this.Error_label);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Error";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Error";

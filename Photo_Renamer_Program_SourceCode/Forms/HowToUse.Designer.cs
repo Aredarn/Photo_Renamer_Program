@@ -210,7 +210,9 @@ namespace Renaming_Prog.Forms
             this.Controls.Add(this.What_For_Label);
             this.Controls.Add(this.PRG_Label);
             this.Controls.Add(this.Info_Label);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "HowToUse";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HowToUse";

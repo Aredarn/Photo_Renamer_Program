@@ -63,7 +63,9 @@ namespace Renaming_Prog
             this.ClientSize = new System.Drawing.Size(217, 107);
             this.Controls.Add(this.Info);
             this.Controls.Add(this.Confirm);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Info_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Info_Form";

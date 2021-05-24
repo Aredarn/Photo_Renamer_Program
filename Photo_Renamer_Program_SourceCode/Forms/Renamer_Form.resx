@@ -335,7 +335,7 @@
     <value>4, 0, 4, 0</value>
   </data>
   <data name="Credit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 17</value>
+    <value>176, 16</value>
   </data>
   <data name="Credit.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -365,7 +365,7 @@
     <value>4, 0, 4, 0</value>
   </data>
   <data name="Lenght.Size" type="System.Drawing.Size, System.Drawing">
-    <value>16, 17</value>
+    <value>15, 16</value>
   </data>
   <data name="Lenght.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -395,7 +395,7 @@
     <value>4, 0, 4, 0</value>
   </data>
   <data name="Copied_files.Size" type="System.Drawing.Size, System.Drawing">
-    <value>16, 17</value>
+    <value>15, 16</value>
   </data>
   <data name="Copied_files.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -455,7 +455,7 @@
     <value>4, 0, 4, 0</value>
   </data>
   <data name="LiveHead_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>441, 24</value>
+    <value>352, 19</value>
   </data>
   <data name="LiveHead_Label.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -488,13 +488,13 @@
     <value>4, 0, 4, 0</value>
   </data>
   <data name="Version_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 17</value>
+    <value>82, 13</value>
   </data>
   <data name="Version_Label.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
   <data name="Version_Label.Text" xml:space="preserve">
-    <value>Version: v6.1</value>
+    <value>Version: v6.2</value>
   </data>
   <data name="&gt;&gt;Version_Label.Name" xml:space="preserve">
     <value>Version_Label</value>
@@ -524,7 +524,7 @@
     <value>44, 0, 43, 0</value>
   </data>
   <data name="Src_LBL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 36</value>
+    <value>239, 29</value>
   </data>
   <data name="Src_LBL.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -563,7 +563,7 @@
     <value>43, 0, 43, 0</value>
   </data>
   <data name="Cpy_LBL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 36</value>
+    <value>240, 29</value>
   </data>
   <data name="Cpy_LBL.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
