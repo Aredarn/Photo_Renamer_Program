@@ -145,10 +145,14 @@ namespace Renaming_Prog
                         Copied_files.Text = $"Files copied: {CopiedFiles}";
                         listBoxphotosAfter.Items.Add(CreatedON + ext);
                         File.Copy(srcPath, pathMove, true);
-                      
-                       
-                        //Write's the name of the correctly copied file into the TXT file
-                        InfoWriter.WriteLine("Copied file after rename: " + CreatedON + ext + "\n");
+
+                        //Gets the name of the file before the rename
+                        string[] parts = srcPath.Split('\\');
+                        string beforeRenameName = parts[parts.Length - 1];
+
+
+                        //Write's the name of the correctly copied file into the TXT file before and after the rename
+                        InfoWriter.WriteLine($"Copied file before rename: {beforeRenameName} \t Copied file after rename: {CreatedON}{ext}\n");
 
                     }
 
