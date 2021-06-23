@@ -45,3 +45,4 @@ The TXT contains a lot of information about the copy process
 
 If you have any question, find any bug or you would like an own version please contant me.
 
+<p>Latest and probably the last version: ALPHA V1.0 </p>
