@@ -1,7 +1,7 @@
 
 
 <h1 align=center > Photo Copy&Renamer Program </h1>
-
+<p align=center> A lightweight, user friendly copy program, written in C# </p>
 <br>
 
 ## What can this program do and which format is supported for copy?
