@@ -44,6 +44,8 @@
             this.Version_Label = new System.Windows.Forms.Label();
             this.Src_LBL = new System.Windows.Forms.Label();
             this.Cpy_LBL = new System.Windows.Forms.Label();
+            this.customFileLabel = new System.Windows.Forms.Label();
+            this.customFileNameTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Select_Photos
@@ -150,11 +152,23 @@
             this.Cpy_LBL.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Cpy_LBL.Name = "Cpy_LBL";
             // 
+            // customFileLabel
+            // 
+            resources.ApplyResources(this.customFileLabel, "customFileLabel");
+            this.customFileLabel.Name = "customFileLabel";
+            // 
+            // customFileNameTextBox
+            // 
+            resources.ApplyResources(this.customFileNameTextBox, "customFileNameTextBox");
+            this.customFileNameTextBox.Name = "customFileNameTextBox";
+            // 
             // Renamer_Form
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Blue;
+            this.Controls.Add(this.customFileNameTextBox);
+            this.Controls.Add(this.customFileLabel);
             this.Controls.Add(this.Cpy_LBL);
             this.Controls.Add(this.Src_LBL);
             this.Controls.Add(this.Version_Label);
@@ -196,6 +210,8 @@
         private System.Windows.Forms.Label Version_Label;
         private System.Windows.Forms.Label Src_LBL;
         private System.Windows.Forms.Label Cpy_LBL;
+        private System.Windows.Forms.Label customFileLabel;
+        private System.Windows.Forms.TextBox customFileNameTextBox;
     }
 }
 

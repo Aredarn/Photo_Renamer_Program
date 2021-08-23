@@ -37,7 +37,6 @@ E:\Programos\Unfinished\Renaming_Prog\obj\Debug\Renaming_Prog.Forms.HowToUse.res
 E:\Programos\Finished\Photo_Renamer_Program_SourceCode\bin\Debug\Renaming_Prog.exe.config
 E:\Programos\Finished\Photo_Renamer_Program_SourceCode\bin\Debug\Renaming_Prog.exe
 E:\Programos\Finished\Photo_Renamer_Program_SourceCode\bin\Debug\Renaming_Prog.pdb
-E:\Programos\Finished\Photo_Renamer_Program_SourceCode\obj\Debug\Renaming_Prog.csprojAssemblyReference.cache
 E:\Programos\Finished\Photo_Renamer_Program_SourceCode\obj\Debug\Renaming_Prog.Error.resources
 E:\Programos\Finished\Photo_Renamer_Program_SourceCode\obj\Debug\Renaming_Prog.Forms.HowToUse.resources
 E:\Programos\Finished\Photo_Renamer_Program_SourceCode\obj\Debug\Renaming_Prog.Info_Form.resources
@@ -64,3 +63,4 @@ E:\Programos\Finished\Photo_Renamer_Program_SourceCode\bin\Debug\System.Threadin
 E:\Programos\Finished\Photo_Renamer_Program_SourceCode\bin\Debug\System.ValueTuple.dll
 E:\Programos\Finished\Photo_Renamer_Program_SourceCode\obj\Debug\Renaming_Prog.exe.config
 E:\Programos\Finished\Photo_Renamer_Program_SourceCode\obj\Debug\Renaming_Prog.csproj.CopyComplete
+E:\Programos\Finished\Photo_Renamer_Program_SourceCode\obj\Debug\Renaming_Prog.csproj.AssemblyReference.cache

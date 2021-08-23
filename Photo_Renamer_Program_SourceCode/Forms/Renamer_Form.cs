@@ -73,7 +73,8 @@ namespace Renaming_Prog
         { 
             string sourcePath = eleresi_ut.Text;
             string targetPath = eleresi_ut_2.Text;
-            string LastFile = "";            
+            //used for date naming:
+            string LastFile = "";         
             int LastFileCount = 0;
             
             Loading_TXT loading = new Loading_TXT();
@@ -90,95 +91,171 @@ namespace Renaming_Prog
             Stopwatch timeElapsed = new Stopwatch();
             timeElapsed.Start();
 
-            try
-            {
-                if (!Directory.Exists(targetPath))
+            if (customFileNameTextBox.Text == "") {
+                try
                 {
-                    Directory.CreateDirectory(targetPath);
-                    loading.Show();
-                }
-                foreach (var srcPath in Directory.GetFiles(sourcePath))
-                {
-                    //Names the variable to the creation time of the correct file.
-                    string CreatedON = "" + File.GetLastWriteTime(srcPath);
-
-                    //Gets the file's format (like png or jpeg)
-                    string ext = Path.GetExtension(srcPath);
-
-                    bool allowFile = false;
-
-                    //This line examines the correct file's format, if it's not correct it won't copy it.
-                    if (ext == ".png" || ext == ".jpeg" || ext == ".jpg" || ext == ".mp4" || ext == ".PNG" || ext == ".JPEG" || ext == ".JPG" || ext == ".MP4")
-                        allowFile = true;
-
-
-                    if (allowFile)
+                    if (!Directory.Exists(targetPath))
                     {
-                        //replaces the ( ':' and the '.' in the files name
-                        CreatedON = CreatedON.Replace(".", "_");
-                        CreatedON = CreatedON.Replace(":", "_");
+                        Directory.CreateDirectory(targetPath);
+                        loading.Show();
+                    }
+                    foreach (var srcPath in Directory.GetFiles(sourcePath))
+                    {
+                        //Names the variable to the creation time of the correct file.
+                        string CreatedON = "" + File.GetLastWriteTime(srcPath);
 
-                        //If the correct copied file is created on the same date as the previous file
-                        //these lines add 2 underlines and how many times the file was found (the same)
-                        //after the filename to prevent duplication and overwriting the file
+                        //Gets the file's format (like png or jpeg)
+                        string ext = Path.GetExtension(srcPath);
 
-                        if (CreatedON == LastFile)
+                        bool allowFile = false;
+
+                        //This line examines the correct file's format, if it's not correct it won't copy it.
+                        if (ext == ".png" || ext == ".jpeg" || ext == ".jpg" || ext == ".mp4" || ext == ".PNG" || ext == ".JPEG" || ext == ".JPG" || ext == ".MP4")
+                            allowFile = true;
+
+
+                        if (allowFile)
                         {
-                            LastFileCount++;
-                            CreatedON = CreatedON + "_" + LastFileCount;
+                            //replaces the ( ':' and the '.' in the files name
+                            CreatedON = CreatedON.Replace(".", "_");
+                            CreatedON = CreatedON.Replace(":", "_");
+
+                            //If the correct copied file is created on the same date as the previous file
+                            //these lines add 2 underlines and how many times the file was found (the same)
+                            //after the filename to prevent duplication and overwriting the file
+
+                            if (CreatedON == LastFile)
+                            {
+                                LastFileCount++;
+                                CreatedON = CreatedON + "_" + LastFileCount;
+                            }
+                            else
+                            {
+                                LastFile = CreatedON;
+                                LastFileCount = 0;
+                            }
+
+
+                            //Adds the targetpath, the date of creation and the file's format
+                            string pathMove = targetPath + @"\" + (CreatedON) + ext;
+
+                            //Add +1 to the copied files
+                            //Writes out how many files got copied
+                            //adds the copied files name to the targetpath listbox
+                            //Copy the file from sourcepath and place into mentioned target path,
+                            CopiedFiles++;
+                            Copied_files.Text = $"Files copied: {CopiedFiles}";
+                            listBoxphotosAfter.Items.Add(CreatedON + ext);
+                            File.Copy(srcPath, pathMove, true);
+
+                            //Gets the name of the file before the rename
+                            string[] parts = srcPath.Split('\\');
+                            string beforeRenameName = parts[parts.Length - 1];
+
+
+                            //Write's the name of the correctly copied file into the TXT file before and after the rename
+                            InfoWriter.WriteLine($"Copied file before rename: {beforeRenameName} \t Copied file after rename: {CreatedON}{ext}\n");
+
                         }
-                        else
-                        {
-                            LastFile = CreatedON;
-                            LastFileCount = 0;
-                        }
-
-
-                        //Adds the targetpath, the date of creation and the file's format
-                        string pathMove = targetPath + @"\" + (CreatedON) + ext;
-
-                        //Add +1 to the copied files
-                        //Writes out how many files got copied
-                        //adds the copied files name to the targetpath listbox
-                        //Copy the file from sourcepath and place into mentioned target path,
-                        CopiedFiles++;
-                        Copied_files.Text = $"Files copied: {CopiedFiles}";
-                        listBoxphotosAfter.Items.Add(CreatedON + ext);
-                        File.Copy(srcPath, pathMove, true);
-
-                        //Gets the name of the file before the rename
-                        string[] parts = srcPath.Split('\\');
-                        string beforeRenameName = parts[parts.Length - 1];
-
-
-                        //Write's the name of the correctly copied file into the TXT file before and after the rename
-                        InfoWriter.WriteLine($"Copied file before rename: {beforeRenameName} \t Copied file after rename: {CreatedON}{ext}\n");
 
                     }
-
-                }                 
-                
-                loading.Close();
-                Info_Form info_Form = new Info_Form();
-                info_Form.Show();
-                
-                //Stoppes the stop watch
-                
-                timeElapsed.Stop();
-                TimeSpan ts = timeElapsed.Elapsed;
-                string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds / 10);
-                //Writes out the elapsed time and the files the number of files that the program wrote, to the TXT file
-                InfoWriter.WriteLine("\nElapsed time: " + elapsedTime);
-                InfoWriter.WriteLine("The program copied: " + CopiedFiles + " files.");
-
+                }
+                catch
+                {
+                    //If the copy can not be done it will open the ERROR Form
+                    Error error = new Error();
+                    error.Show();
+                    InfoWriter.WriteLine("The program could not copy.");
+                }
             }
-            catch
+            else
             {
-                //If the copy can not be done it will open the ERROR Form
-                Error error = new Error();
-                error.Show();
-                InfoWriter.WriteLine("The program could not copy.");
+                try
+                {
+                    if (!Directory.Exists(targetPath))
+                    {
+                        Directory.CreateDirectory(targetPath);
+                        loading.Show();
+                    }
+                    foreach (var srcPath in Directory.GetFiles(sourcePath))
+                    {
+                        //Names the variable to the user specified name.
+                        string fileName = customFileNameTextBox.Text + CopiedFiles;
+
+                        //Gets the file's format (like png or jpeg)
+                        string ext = Path.GetExtension(srcPath);
+
+                        bool allowFile = false;
+
+                        //This line examines the correct file's format, if it's not correct it won't copy it.
+                        if (ext == ".png" || ext == ".jpeg" || ext == ".jpg" || ext == ".mp4" || ext == ".PNG" || ext == ".JPEG" || ext == ".JPG" || ext == ".MP4")
+                            allowFile = true;
+
+
+                        if (allowFile)
+                        {
+                            //If the correct copied file is created on the same date as the previous file
+                            //these lines add 2 underlines and how many times the file was found (the same)
+                            //after the filename to prevent duplication and overwriting the file
+
+                            if (fileName == LastFile)
+                            {
+                                LastFileCount++;
+                                fileName = fileName + "_" + LastFileCount;
+                            }
+                            else
+                            {
+                                LastFile = fileName;
+                                LastFileCount = 0;
+                            }
+
+
+                            //Adds the targetpath, the custom name and the file's format
+                            string pathMove = targetPath + @"\" + (fileName) + ext;
+
+                            //Add +1 to the copied files
+                            //Writes out how many files got copied
+                            //adds the copied files name to the targetpath listbox
+                            //Copy the file from sourcepath and place into mentioned target path,
+                            CopiedFiles++;
+                            Copied_files.Text = $"Files copied: {CopiedFiles}";
+                            listBoxphotosAfter.Items.Add(fileName + ext);
+                            File.Copy(srcPath, pathMove, true);
+
+                            //Gets the name of the file before the rename
+                            string[] parts = srcPath.Split('\\');
+                            string beforeRenameName = parts[parts.Length - 1];
+
+
+                            //Write's the name of the correctly copied file into the TXT file before and after the rename
+                            InfoWriter.WriteLine($"Copied file before rename: {beforeRenameName} \t Copied file after rename: {fileName}{ext}\n");
+
+                        }
+
+                    }
+                }
+                catch
+                {
+                    //If the copy can not be done it will open the ERROR Form
+                    Error error = new Error();
+                    error.Show();
+                    InfoWriter.WriteLine("The program could not copy.");
+                }
+
             }
+            loading.Close();
+            Info_Form info_Form = new Info_Form();
+            info_Form.Show();
+
+            //Stoppes the stop watch
+
+            timeElapsed.Stop();
+            TimeSpan ts = timeElapsed.Elapsed;
+            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds / 10);
+            //Writes out the elapsed time and the files the number of files that the program wrote, to the TXT file
+            InfoWriter.WriteLine("\nElapsed time: " + elapsedTime);
+            InfoWriter.WriteLine("The program copied: " + CopiedFiles + " files.");
+
             InfoWriter.Close();
         }
 
@@ -255,6 +332,7 @@ namespace Renaming_Prog
         {
             Copy_Files.BackColor = Color.Lime;
         }
+
         //************************************************************************//
         //************************************************************************//
     }
