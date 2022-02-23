@@ -46,11 +46,13 @@
             this.Cpy_LBL = new System.Windows.Forms.Label();
             this.customFileLabel = new System.Windows.Forms.Label();
             this.customFileNameTextBox = new System.Windows.Forms.TextBox();
+            this.ChangeLanguage = new System.Windows.Forms.Button();
+            this.allowFolderSort = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // Select_Photos
             // 
-            this.Select_Photos.BackColor = System.Drawing.Color.Lime;
+            this.Select_Photos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(15)))), ((int)(((byte)(240)))));
             resources.ApplyResources(this.Select_Photos, "Select_Photos");
             this.Select_Photos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Select_Photos.Name = "Select_Photos";
@@ -68,7 +70,7 @@
             // 
             // Copy_Files
             // 
-            this.Copy_Files.BackColor = System.Drawing.Color.Lime;
+            this.Copy_Files.BackColor = System.Drawing.Color.GhostWhite;
             resources.ApplyResources(this.Copy_Files, "Copy_Files");
             this.Copy_Files.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Copy_Files.Name = "Copy_Files";
@@ -90,7 +92,7 @@
             // 
             // select_folder
             // 
-            this.select_folder.BackColor = System.Drawing.Color.Lime;
+            this.select_folder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(15)))), ((int)(((byte)(240)))));
             resources.ApplyResources(this.select_folder, "select_folder");
             this.select_folder.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.select_folder.Name = "select_folder";
@@ -141,14 +143,14 @@
             // Src_LBL
             // 
             resources.ApplyResources(this.Src_LBL, "Src_LBL");
-            this.Src_LBL.BackColor = System.Drawing.Color.Lime;
+            this.Src_LBL.BackColor = System.Drawing.Color.Blue;
             this.Src_LBL.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Src_LBL.Name = "Src_LBL";
             // 
             // Cpy_LBL
             // 
             resources.ApplyResources(this.Cpy_LBL, "Cpy_LBL");
-            this.Cpy_LBL.BackColor = System.Drawing.Color.Lime;
+            this.Cpy_LBL.BackColor = System.Drawing.Color.Blue;
             this.Cpy_LBL.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Cpy_LBL.Name = "Cpy_LBL";
             // 
@@ -162,11 +164,27 @@
             resources.ApplyResources(this.customFileNameTextBox, "customFileNameTextBox");
             this.customFileNameTextBox.Name = "customFileNameTextBox";
             // 
+            // ChangeLanguage
+            // 
+            this.ChangeLanguage.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            resources.ApplyResources(this.ChangeLanguage, "ChangeLanguage");
+            this.ChangeLanguage.Name = "ChangeLanguage";
+            this.ChangeLanguage.UseVisualStyleBackColor = true;
+            this.ChangeLanguage.Click += new System.EventHandler(this.ChangeLanguage_Click);
+            // 
+            // allowFolderSort
+            // 
+            resources.ApplyResources(this.allowFolderSort, "allowFolderSort");
+            this.allowFolderSort.Name = "allowFolderSort";
+            this.allowFolderSort.UseVisualStyleBackColor = true;
+            // 
             // Renamer_Form
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Blue;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(100)))));
+            this.Controls.Add(this.allowFolderSort);
+            this.Controls.Add(this.ChangeLanguage);
             this.Controls.Add(this.customFileNameTextBox);
             this.Controls.Add(this.customFileLabel);
             this.Controls.Add(this.Cpy_LBL);
@@ -212,6 +230,8 @@
         private System.Windows.Forms.Label Cpy_LBL;
         private System.Windows.Forms.Label customFileLabel;
         private System.Windows.Forms.TextBox customFileNameTextBox;
+        private System.Windows.Forms.Button ChangeLanguage;
+        private System.Windows.Forms.CheckBox allowFolderSort;
     }
 }
 

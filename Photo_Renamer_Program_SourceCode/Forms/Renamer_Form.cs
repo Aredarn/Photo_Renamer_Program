@@ -8,21 +8,30 @@ using System.Diagnostics;
 
 namespace Renaming_Prog
 {
+
+
+
+    //MAIN ACTIVITIES//
     public partial class Renamer_Form : Form
     {
-        public Renamer_Form()
-        {
-            InitializeComponent();
-        }
+        //VARIABLES//
 
         //declarates an OpenFile Dialog and a FolderBrowserDialog for the program.
         OpenFileDialog ofd = new OpenFileDialog();
         FolderBrowserDialog FolderBrowserDialog = new FolderBrowserDialog();
-        
-        public int CopiedFiles = 0;
-        string CorrectTime = DateTime.Now.ToString();
 
-        
+        int CopiedFiles = 0;
+
+        string CorrectTime = DateTime.Now.ToString();
+        string str;
+
+        FileInfo[] Files;
+        //END OF VARIABLES//
+
+        public Renamer_Form()
+        {
+            InitializeComponent();
+        }
 
         //These lines are responsible for the 2 main buttons in the program.
         //These open a File explorer to select a folder
@@ -30,8 +39,7 @@ namespace Renaming_Prog
         private void Select_Photos_Click(object sender, EventArgs e)
         {
             listBoxphotosBefore.Items.Clear();
-            string str;
-            FileInfo[] Files;
+            
             if (FolderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
                 eleresi_ut.Text = FolderBrowserDialog.SelectedPath;
@@ -69,14 +77,25 @@ namespace Renaming_Prog
         //Counts the files in the first folder and after copy process it counts the files which has been copied
         //
 
-        private void Change_Names_Click(object sender, EventArgs e)
-        { 
+
+        private void test()
+        {
+            this.Invoke((MethodInvoker)delegate () { listBoxphotosAfter.Items.Add("hiakgsjfnm,"); });
+        }
+
+
+        private void change()
+        {
+            CopiedFiles = 0;
+            string pathMove = "";
             string sourcePath = eleresi_ut.Text;
             string targetPath = eleresi_ut_2.Text;
             //used for date naming:
-            string LastFile = "";         
+            string LastFile = "";
             int LastFileCount = 0;
-            
+
+
+
             Loading_TXT loading = new Loading_TXT();
 
             //Edits the CorrectTime string so it can be a TXT file name for a StreamWriter.
@@ -91,7 +110,8 @@ namespace Renaming_Prog
             Stopwatch timeElapsed = new Stopwatch();
             timeElapsed.Start();
 
-            if (customFileNameTextBox.Text == "") {
+            if (customFileNameTextBox.Text == "")
+            {
                 try
                 {
                     if (!Directory.Exists(targetPath))
@@ -101,8 +121,13 @@ namespace Renaming_Prog
                     }
                     foreach (var srcPath in Directory.GetFiles(sourcePath))
                     {
+
+                        string[] createdDatesList = new string[CopiedFiles + 1];
+
                         //Names the variable to the creation time of the correct file.
                         string CreatedON = "" + File.GetLastWriteTime(srcPath);
+
+
 
                         //Gets the file's format (like png or jpeg)
                         string ext = Path.GetExtension(srcPath);
@@ -116,9 +141,12 @@ namespace Renaming_Prog
 
                         if (allowFile)
                         {
-                            //replaces the ( ':' and the '.' in the files name
+                            //replaces the ':' and the '.' in the files name to '_'
                             CreatedON = CreatedON.Replace(".", "_");
                             CreatedON = CreatedON.Replace(":", "_");
+
+                            string[] dates = CreatedON.Split('_');
+
 
                             //If the correct copied file is created on the same date as the previous file
                             //these lines add 2 underlines and how many times the file was found (the same)
@@ -136,16 +164,43 @@ namespace Renaming_Prog
                             }
 
 
-                            //Adds the targetpath, the date of creation and the file's format
-                            string pathMove = targetPath + @"\" + (CreatedON) + ext;
+                            if (allowFolderSort.Checked)
+                            {
+                                bool containsTheDate = false;
+
+                                for (int i = 0; i < createdDatesList.Length; i++)
+                                {
+                                    if (dates[0] + "" + dates[1] == createdDatesList[i])
+                                    {
+                                        containsTheDate = true;
+                                    }
+                                }
+
+                                if (containsTheDate)
+                                {
+                                    pathMove = targetPath + @"\" + dates[0] + "" + dates[1] + @"\" + (CreatedON) + ext;
+                                }
+                                else
+                                {
+                                    Directory.CreateDirectory(targetPath + @"\" + dates[0] + "" + dates[1]);
+                                    createdDatesList[createdDatesList.Length - 1] = dates[0] + "" + dates[1];
+                                    pathMove = targetPath + @"\" + dates[0] + "" + dates[1] + @"\" + (CreatedON) + ext;
+                                }
+                            }
+                            else
+                            {
+                                pathMove = targetPath + @"\" + (CreatedON) + ext;
+                            }
+
 
                             //Add +1 to the copied files
                             //Writes out how many files got copied
                             //adds the copied files name to the targetpath listbox
                             //Copy the file from sourcepath and place into mentioned target path,
                             CopiedFiles++;
-                            Copied_files.Text = $"Files copied: {CopiedFiles}";
-                            listBoxphotosAfter.Items.Add(CreatedON + ext);
+                            this.Invoke((MethodInvoker)delegate () { Copied_files.Text = $"Files copied: {CopiedFiles}"; });
+                            this.Invoke((MethodInvoker)delegate () { listBoxphotosAfter.Items.Add(CreatedON + ext); });
+                            
                             File.Copy(srcPath, pathMove, true);
 
                             //Gets the name of the file before the rename
@@ -157,15 +212,14 @@ namespace Renaming_Prog
                             InfoWriter.WriteLine($"Copied file before rename: {beforeRenameName} \t Copied file after rename: {CreatedON}{ext}\n");
 
                         }
-
                     }
                 }
-                catch
+                catch (Exception ex)
                 {
                     //If the copy can not be done it will open the ERROR Form
                     Error error = new Error();
                     error.Show();
-                    InfoWriter.WriteLine("The program could not copy.");
+                    InfoWriter.WriteLine("The program could not copy.\n" + ex.ToString());
                 }
             }
             else
@@ -211,15 +265,15 @@ namespace Renaming_Prog
 
 
                             //Adds the targetpath, the custom name and the file's format
-                            string pathMove = targetPath + @"\" + (fileName) + ext;
+                            pathMove = targetPath + @"\" + (fileName) + ext;
 
                             //Add +1 to the copied files
                             //Writes out how many files got copied
                             //adds the copied files name to the targetpath listbox
                             //Copy the file from sourcepath and place into mentioned target path,
                             CopiedFiles++;
-                            Copied_files.Text = $"Files copied: {CopiedFiles}";
-                            listBoxphotosAfter.Items.Add(fileName + ext);
+                            this.Invoke((MethodInvoker)delegate () { Copied_files.Text = $"Files copied: {CopiedFiles}"; });
+                            this.Invoke((MethodInvoker)delegate () { listBoxphotosAfter.Items.Add(fileName + ext); });
                             File.Copy(srcPath, pathMove, true);
 
                             //Gets the name of the file before the rename
@@ -234,12 +288,12 @@ namespace Renaming_Prog
 
                     }
                 }
-                catch
+                catch (Exception ex)
                 {
                     //If the copy can not be done it will open the ERROR Form
                     Error error = new Error();
                     error.Show();
-                    InfoWriter.WriteLine("The program could not copy.");
+                    InfoWriter.WriteLine("The program could not copy." + ex);
                 }
 
             }
@@ -257,6 +311,12 @@ namespace Renaming_Prog
             InfoWriter.WriteLine("The program copied: " + CopiedFiles + " files.");
 
             InfoWriter.Close();
+        }
+
+        private void Change_Names_Click(object sender, EventArgs e)
+        {
+            Thread thread = new Thread(change);
+            thread.Start();
         }
 
         //This method allows the user to copy only one photo by clicking on it.
@@ -314,7 +374,7 @@ namespace Renaming_Prog
         }
         private void Select_Photos_MouseLeave(object sender, EventArgs e)
         {
-            Select_Photos.BackColor = Color.Lime;
+            Select_Photos.BackColor = Color.Blue;
         }
         private void select_folder_MouseHover(object sender, EventArgs e)
         {
@@ -322,7 +382,7 @@ namespace Renaming_Prog
         }
         private void select_folder_MouseLeave(object sender, EventArgs e)
         {
-            select_folder.BackColor = Color.Lime;
+            select_folder.BackColor = Color.Blue;
         }
         private void Copy_Files_MouseHover(object sender, EventArgs e)
         {
@@ -330,7 +390,37 @@ namespace Renaming_Prog
         }
         private void Copy_Files_MouseLeave(object sender, EventArgs e)
         {
-            Copy_Files.BackColor = Color.Lime;
+            Copy_Files.BackColor = Color.White;
+        }
+
+
+        //Language Setting
+        private void ChangeLanguage_Click(object sender, EventArgs e)
+        {
+            string whichLang = ChangeLanguage.Text;
+
+            if(whichLang == "English")
+            {
+                changeToHun();
+            }
+            else
+            {
+
+            }
+        }
+
+
+        private void changeToHun()
+        {
+            LiveHead_Label.Text = "Fotó Másoló Program";
+            Help_button.Text = "Segítség";
+            Select_Photos.Text = "Válassz ki egy mappát (Ahonnan a fotókat másolod)";
+            select_folder.Text = "Válassz ki egy mappát (Ahova a fotókat másolod)";
+            Src_LBL.Text = "Forrás fájlok";
+            Cpy_LBL.Text = "Másolt fájlok";
+            customFileLabel.Text = "Választható: Saját fájl név:";
+            Copy_Files.Text = "Kattints ide a fájlok másolásához!";
+            ChangeLanguage.Text = "Magyar";
         }
 
         //************************************************************************//

@@ -1232,29 +1232,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Meszi\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\mesza\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Programos\\Finished\\Photo_Renamer_Program_SourceCode\\Renaming_Prog.csproj",
+      "projectUniqueName": "D:\\Programos\\Finished\\Photo_Renamer_Program_SourceCode\\Renaming_Prog.csproj",
       "projectName": "Renaming_Prog",
-      "projectPath": "E:\\Programos\\Finished\\Photo_Renamer_Program_SourceCode\\Renaming_Prog.csproj",
-      "packagesPath": "C:\\Users\\Meszi\\.nuget\\packages\\",
-      "outputPath": "E:\\Programos\\Finished\\Photo_Renamer_Program_SourceCode\\obj\\",
+      "projectPath": "D:\\Programos\\Finished\\Photo_Renamer_Program_SourceCode\\Renaming_Prog.csproj",
+      "packagesPath": "C:\\Users\\mesza\\.nuget\\packages\\",
+      "outputPath": "D:\\Programos\\Finished\\Photo_Renamer_Program_SourceCode\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Meszi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mesza\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net472"

@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Select_Photos.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11.25pt, style=Italic</value>
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold, Italic</value>
   </data>
   <data name="Select_Photos.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 42</value>
@@ -148,7 +148,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Select_Photos.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
   </data>
   <data name="listBoxphotosBefore.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 177</value>
@@ -169,7 +169,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBoxphotosBefore.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="Copy_Files.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
@@ -178,7 +178,7 @@
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
   </data>
   <data name="Copy_Files.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 499</value>
+    <value>15, 531</value>
   </data>
   <data name="Copy_Files.Size" type="System.Drawing.Size, System.Drawing">
     <value>455, 46</value>
@@ -199,7 +199,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Copy_Files.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="listBoxphotosAfter.Location" type="System.Drawing.Point, System.Drawing">
     <value>253, 177</value>
@@ -220,7 +220,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBoxphotosAfter.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="eleresi_ut.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -234,10 +234,6 @@
   <data name="eleresi_ut.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="eleresi_ut.Text" xml:space="preserve">
-    <value>Folder_path
-</value>
-  </data>
   <data name="&gt;&gt;eleresi_ut.Name" xml:space="preserve">
     <value>eleresi_ut</value>
   </data>
@@ -248,10 +244,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;eleresi_ut.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="select_folder.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11.25pt, style=Italic</value>
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold, Italic</value>
   </data>
   <data name="select_folder.Location" type="System.Drawing.Point, System.Drawing">
     <value>253, 42</value>
@@ -275,7 +271,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;select_folder.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="eleresi_ut_2.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -299,10 +295,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;eleresi_ut_2.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="Credit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>377, 548</value>
+    <value>377, 579</value>
   </data>
   <data name="Credit.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 23</value>
@@ -323,7 +319,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Credit.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="Lenght.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -350,7 +346,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Lenght.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="Copied_files.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -377,7 +373,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Copied_files.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="Help_button.Location" type="System.Drawing.Point, System.Drawing">
     <value>380, 12</value>
@@ -401,7 +397,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Help_button.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="LiveHead_Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -431,7 +427,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;LiveHead_Label.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="Version_Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -440,7 +436,7 @@
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
   <data name="Version_Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 548</value>
+    <value>360, 596</value>
   </data>
   <data name="Version_Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>118, 13</value>
@@ -461,7 +457,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Version_Label.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="Src_LBL.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -497,7 +493,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Src_LBL.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="Cpy_LBL.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -533,7 +529,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Cpy_LBL.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="customFileLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -542,7 +538,7 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="customFileLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 466</value>
+    <value>16, 497</value>
   </data>
   <data name="customFileLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>211, 20</value>
@@ -563,10 +559,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;customFileLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="customFileNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>253, 466</value>
+    <value>253, 497</value>
   </data>
   <data name="customFileNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>217, 20</value>
@@ -584,6 +580,60 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;customFileNameTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ChangeLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 581</value>
+  </data>
+  <data name="ChangeLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 23</value>
+  </data>
+  <data name="ChangeLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="ChangeLanguage.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="&gt;&gt;ChangeLanguage.Name" xml:space="preserve">
+    <value>ChangeLanguage</value>
+  </data>
+  <data name="&gt;&gt;ChangeLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChangeLanguage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ChangeLanguage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="allowFolderSort.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="allowFolderSort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>304, 474</value>
+  </data>
+  <data name="allowFolderSort.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="allowFolderSort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 17</value>
+  </data>
+  <data name="allowFolderSort.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="allowFolderSort.Text" xml:space="preserve">
+    <value>Sort files by years and months</value>
+  </data>
+  <data name="&gt;&gt;allowFolderSort.Name" xml:space="preserve">
+    <value>allowFolderSort</value>
+  </data>
+  <data name="&gt;&gt;allowFolderSort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;allowFolderSort.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;allowFolderSort.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -596,7 +646,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>484, 561</value>
+    <value>484, 611</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
