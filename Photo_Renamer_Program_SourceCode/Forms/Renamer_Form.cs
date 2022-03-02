@@ -299,7 +299,7 @@ namespace Renaming_Prog
             }
             loading.Close();
             Info_Form info_Form = new Info_Form();
-            info_Form.Show();
+            info_Form.Show(); 
 
             //Stoppes the stop watch
 
