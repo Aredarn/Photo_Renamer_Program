@@ -48,6 +48,8 @@
             this.customFileNameTextBox = new System.Windows.Forms.TextBox();
             this.ChangeLanguage = new System.Windows.Forms.Button();
             this.allowFolderSort = new System.Windows.Forms.CheckBox();
+            this.Open_From_Folder = new System.Windows.Forms.Button();
+            this.Open_To_Folder = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Select_Photos
@@ -177,12 +179,32 @@
             resources.ApplyResources(this.allowFolderSort, "allowFolderSort");
             this.allowFolderSort.Name = "allowFolderSort";
             this.allowFolderSort.UseVisualStyleBackColor = true;
+            this.allowFolderSort.CheckedChanged += new System.EventHandler(this.allowFolderSort_CheckedChanged);
+            // 
+            // Open_From_Folder
+            // 
+            this.Open_From_Folder.BackColor = System.Drawing.Color.White;
+            this.Open_From_Folder.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            resources.ApplyResources(this.Open_From_Folder, "Open_From_Folder");
+            this.Open_From_Folder.Name = "Open_From_Folder";
+            this.Open_From_Folder.UseVisualStyleBackColor = false;
+            this.Open_From_Folder.Click += new System.EventHandler(this.Open_From_Folder_Click);
+            // 
+            // Open_To_Folder
+            // 
+            this.Open_To_Folder.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            resources.ApplyResources(this.Open_To_Folder, "Open_To_Folder");
+            this.Open_To_Folder.Name = "Open_To_Folder";
+            this.Open_To_Folder.UseVisualStyleBackColor = true;
+            this.Open_To_Folder.Click += new System.EventHandler(this.Open_To_Folder_Click);
             // 
             // Renamer_Form
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(100)))));
+            this.Controls.Add(this.Open_To_Folder);
+            this.Controls.Add(this.Open_From_Folder);
             this.Controls.Add(this.allowFolderSort);
             this.Controls.Add(this.ChangeLanguage);
             this.Controls.Add(this.customFileNameTextBox);
@@ -232,6 +254,8 @@
         private System.Windows.Forms.TextBox customFileNameTextBox;
         private System.Windows.Forms.Button ChangeLanguage;
         private System.Windows.Forms.CheckBox allowFolderSort;
+        private System.Windows.Forms.Button Open_From_Folder;
+        private System.Windows.Forms.Button Open_To_Folder;
     }
 }
 

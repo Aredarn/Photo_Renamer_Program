@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Error.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Error.Designer.cs">
-      <DependentUpon>Error.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\HowToUse.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,12 +58,6 @@
     <Compile Include="Forms\Info_Form.Designer.cs">
       <DependentUpon>Info_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Loading.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Loading.Designer.cs">
-      <DependentUpon>Loading.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Renamer_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,17 +66,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Error.resx">
-      <DependentUpon>Error.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\HowToUse.resx">
       <DependentUpon>HowToUse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Info_Form.resx">
       <DependentUpon>Info_Form.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Loading.resx">
-      <DependentUpon>Loading.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Renamer_Form.resx">
       <DependentUpon>Renamer_Form.cs</DependentUpon>

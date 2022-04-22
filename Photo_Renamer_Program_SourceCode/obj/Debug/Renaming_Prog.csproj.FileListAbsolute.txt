@@ -81,13 +81,10 @@ D:\Programos\Finished\Photo_Renamer_Program_SourceCode\bin\Debug\System.Numerics
 D:\Programos\Finished\Photo_Renamer_Program_SourceCode\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 D:\Programos\Finished\Photo_Renamer_Program_SourceCode\bin\Debug\System.Threading.Tasks.Extensions.dll
 D:\Programos\Finished\Photo_Renamer_Program_SourceCode\bin\Debug\System.ValueTuple.dll
-D:\Programos\Finished\Photo_Renamer_Program_SourceCode\obj\Debug\Renaming_Prog.csproj.AssemblyReference.cache
 D:\Programos\Finished\Photo_Renamer_Program_SourceCode\obj\Debug\Renaming_Prog.csproj.SuggestedBindingRedirects.cache
 D:\Programos\Finished\Photo_Renamer_Program_SourceCode\obj\Debug\Renaming_Prog.exe.config
-D:\Programos\Finished\Photo_Renamer_Program_SourceCode\obj\Debug\Renaming_Prog.Error.resources
 D:\Programos\Finished\Photo_Renamer_Program_SourceCode\obj\Debug\Renaming_Prog.Forms.HowToUse.resources
 D:\Programos\Finished\Photo_Renamer_Program_SourceCode\obj\Debug\Renaming_Prog.Info_Form.resources
-D:\Programos\Finished\Photo_Renamer_Program_SourceCode\obj\Debug\Renaming_Prog.Forms.Loading_TXT.resources
 D:\Programos\Finished\Photo_Renamer_Program_SourceCode\obj\Debug\Renaming_Prog.Renamer_Form.resources
 D:\Programos\Finished\Photo_Renamer_Program_SourceCode\obj\Debug\Renaming_Prog.Properties.Resources.resources
 D:\Programos\Finished\Photo_Renamer_Program_SourceCode\obj\Debug\Renaming_Prog.csproj.GenerateResource.cache

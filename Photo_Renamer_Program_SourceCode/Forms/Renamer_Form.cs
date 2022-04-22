@@ -39,7 +39,7 @@ namespace Renaming_Prog
         private void Select_Photos_Click(object sender, EventArgs e)
         {
             listBoxphotosBefore.Items.Clear();
-            
+            Lenght.Text = "";
             if (FolderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
                 eleresi_ut.Text = FolderBrowserDialog.SelectedPath;
@@ -54,12 +54,13 @@ namespace Renaming_Prog
                     str = str + ", " + file.Name;
                 }
 
-                Lenght.Text = "" + db;
+                Lenght.Text = "Items in the folder: " + db;
             }
         }
         private void select_folder_Click(object sender, EventArgs e)
         {
             listBoxphotosAfter.Items.Clear();
+            Copied_files.Text = "";
             if (FolderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
                 eleresi_ut_2.Text = FolderBrowserDialog.SelectedPath;
@@ -96,7 +97,7 @@ namespace Renaming_Prog
 
 
 
-            Loading_TXT loading = new Loading_TXT();
+            
 
             //Edits the CorrectTime string so it can be a TXT file name for a StreamWriter.
             CorrectTime = CorrectTime.Replace(".", "_");
@@ -117,7 +118,7 @@ namespace Renaming_Prog
                     if (!Directory.Exists(targetPath))
                     {
                         Directory.CreateDirectory(targetPath);
-                        loading.Show();
+                       
                     }
                     foreach (var srcPath in Directory.GetFiles(sourcePath))
                     {
@@ -216,9 +217,6 @@ namespace Renaming_Prog
                 }
                 catch (Exception ex)
                 {
-                    //If the copy can not be done it will open the ERROR Form
-                    Error error = new Error();
-                    error.Show();
                     InfoWriter.WriteLine("The program could not copy.\n" + ex.ToString());
                 }
             }
@@ -229,7 +227,6 @@ namespace Renaming_Prog
                     if (!Directory.Exists(targetPath))
                     {
                         Directory.CreateDirectory(targetPath);
-                        loading.Show();
                     }
                     foreach (var srcPath in Directory.GetFiles(sourcePath))
                     {
@@ -290,14 +287,11 @@ namespace Renaming_Prog
                 }
                 catch (Exception ex)
                 {
-                    //If the copy can not be done it will open the ERROR Form
-                    Error error = new Error();
-                    error.Show();
                     InfoWriter.WriteLine("The program could not copy." + ex);
                 }
 
             }
-            loading.Close();
+            
             Info_Form info_Form = new Info_Form();
             info_Form.Show(); 
 
@@ -315,6 +309,7 @@ namespace Renaming_Prog
 
         private void Change_Names_Click(object sender, EventArgs e)
         {
+            listBoxphotosAfter.Items.Clear();
             Thread thread = new Thread(change);
             thread.Start();
         }
@@ -349,11 +344,6 @@ namespace Renaming_Prog
                 listBoxphotosAfter.Items.Add(CreatedON + ext);
                 CopiedFiles++;
                 Copied_files.Text = $"Files copied: {CopiedFiles}";
-            }
-            else
-            {
-                Error error = new Error();
-                error.Show();
             }
         }
 
@@ -422,6 +412,41 @@ namespace Renaming_Prog
             Copy_Files.Text = "Kattints ide a fájlok másolásához!";
             ChangeLanguage.Text = "Magyar";
         }
+
+        private void allowFolderSort_CheckedChanged(object sender, EventArgs e)
+        {
+            if (allowFolderSort.Checked)
+            {
+                customFileNameTextBox.Text = "";
+                customFileNameTextBox.Enabled = false;
+            }
+            else
+            {
+                customFileNameTextBox.Enabled = true;
+            }
+         
+        }
+
+        private void Open_From_Folder_Click(object sender, EventArgs e)
+        {
+            if(eleresi_ut.Text=="")
+            {
+
+            }
+            else
+                Process.Start("explorer.exe", eleresi_ut.Text);
+        }
+
+        private void Open_To_Folder_Click(object sender, EventArgs e)
+        {
+            if (eleresi_ut_2.Text == "")
+            {
+
+            }
+            else
+                Process.Start("explorer.exe", eleresi_ut_2.Text);
+        }
+
 
         //************************************************************************//
         //************************************************************************//
